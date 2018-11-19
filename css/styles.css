@@ -19,8 +19,6 @@
 *
 *****************************************/
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700");
 .white {
   color: #fff; }
 
@@ -2393,6 +2391,15 @@
 * Typographic styles
 *
 *****************************************/
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat Light"), local("Montserrat-Light"), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_cJD3gfD_u50.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
 .montserrat-font {
   font-family: "Montserrat", sans-serif; }
 
@@ -2545,95 +2552,6 @@ body {
   font-size: 1.4rem; }
   body > section {
     overflow: hidden; }
-
-#UserAgent {
-  display: none; }
-
-a,
-button {
-  display: block;
-  outline: none; }
-  a.btn,
-  button.btn {
-    height: 44px;
-    line-height: 44px;
-    padding: 0 20px;
-    border-radius: 8px !important; }
-    a.btn.link-btn,
-    button.btn.link-btn {
-      height: 44px;
-      border: 2px solid #fff;
-      margin: 20px 0;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      font-size: 1.8rem;
-      color: #fff;
-      line-height: 38px;
-      text-align: center;
-      transition: all 0.5s ease-in-out; }
-      a.btn.link-btn.inverse,
-      button.btn.link-btn.inverse {
-        border-color: #000;
-        color: #000; }
-      a.btn.link-btn.primary,
-      button.btn.link-btn.primary {
-        background-color: transparent;
-        border-color: #eb602a;
-        color: #eb602a; }
-    a.btn.brand-btn,
-    button.btn.brand-btn {
-      background-color: #ffd800;
-      border: 1px solid #ffd800;
-      color: #fff;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 400;
-      letter-spacing: 0.0055rem;
-      font-size: 18px;
-      font-size: 1.8rem;
-      transition: all 0.5s ease-in-out; }
-      a.btn.brand-btn.brand-red,
-      button.btn.brand-btn.brand-red {
-        background-color: #ffd800;
-        border-color: #ffd800; }
-      a.btn.brand-btn.brand-reverse,
-      button.btn.brand-btn.brand-reverse {
-        background-color: transparent;
-        border-color: #eb602a;
-        color: #eb602a; }
-    a.btn.wide-btn,
-    button.btn.wide-btn {
-      padding: 0 100px; }
-  a:hover.btn.brand-btn,
-  button:hover.btn.brand-btn {
-    background-color: #fff;
-    border: 1px solid #fff;
-    color: #eb602a; }
-    a:hover.btn.brand-btn.brand-red,
-    button:hover.btn.brand-btn.brand-red {
-      border-color: #ffd800;
-      background-color: #ffd800;
-      color: #fff; }
-    a:hover.btn.brand-btn.brand-reverse,
-    button:hover.btn.brand-btn.brand-reverse {
-      border-color: #fff;
-      background-color: #eb602a;
-      color: #fff; }
-  a:hover.btn.link-btn,
-  button:hover.btn.link-btn {
-    background-color: #fff;
-    border: 1px solid #fff;
-    color: #eb602a; }
-    a:hover.btn.link-btn.inverse,
-    button:hover.btn.link-btn.inverse {
-      background-color: #eb602a;
-      border: 1px solid #eb602a;
-      color: #fff; }
-    a:hover.btn.link-btn.primary,
-    button:hover.btn.link-btn.primary {
-      background-color: #eb602a;
-      border-color: #eb602a;
-      color: #fff; }
 
 /*
  * jQuery FlexSlider v2.2.0
