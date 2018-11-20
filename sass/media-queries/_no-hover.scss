@@ -8,36 +8,3 @@
 *
 **********************************************************/
 
-body {
-
-  /*&:before {
-    content: 'No Hover';
-    @include font-size(36);
-    color: red;
-  }*/
-}
-
-@media only screen and (min-width: 991px) {
-
-  header {
-
-    .top-nav {
-
-      nav {
-
-        .navbar-collapse {
-        }
-
-        .burger-menu {
-
-          &.navbar-toggler {
-            display: block;
-          }
-        }
-      }
-    }
-  }
-}
-
-
-@import "../components/mobile-menu";

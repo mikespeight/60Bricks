@@ -61,11 +61,11 @@ header  {
           }
 
           &:hover {
-            background-color: $suntrapOrange;
+            background-color: $coreGold;
 
             a {
               color: $white;
-              border-color: $suntrapOrange;
+              border-color: $coreGold;
               text-decoration: none;
 
             }
@@ -104,7 +104,7 @@ header  {
 
                   & > a {
                     color: $black;
-                    font-family: $Roboto-font;
+                    font-family: $Myriad-Pro-font;
                     font-weight: $regular;
                     @include font-size(18);
                     border-bottom: 1px solid transparent;
@@ -115,9 +115,9 @@ header  {
 
                     &:hover,
                     &:active {
-                      color: $suntrapOrange;
+                      color: $coreGold;
                       background-color: transparent;
-                      border-bottom: 1px solid $suntrapOrange;
+                      border-bottom: 1px solid $coreGold;
                     }
                   }
                 }

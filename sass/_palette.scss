@@ -8,11 +8,17 @@ $white: #fff;                   .white {color: $white}
 $black: #000;                   .black {color: $black}
 
 //Brand colours
-$suntrapOrange: #eb602a;  // Suntrap Orange:
-$suntrapYellow1: #f8ad00;  // Suntrap Yellow 1:
-$suntrapYellow2: #ffd800;  // Suntrap Yellow 2:
-$suntrapBlue: #253746;  // Suntrap Blue:
-$suntrapSilver: #c0c0c0;  // Suntrap Silver:
+$coreBlue: #81b5c2; //RGB 129, 181, 194
+.coreBlue {  color: $coreBlue;}
+$coreGold: #ba7233; //RGB 186, 114, 51
+.coreGold { color: $coreGold}
+$accentBlue: #4e748b; //RGB 78, 116, 139
+.accentBlue {color: $accentBlue}
+$accentGrey: #29282a; //RGB 41, 40, 42
+.accentGrey {color: $accentGrey}
+$accentSilver: #c0c0c0; //RGB 192, 192, 192
+.accentSilver {color: $accentSilver}
+
 
 // non brand colours i.e. Rob's
 $grey:  #808084;
@@ -21,5 +27,5 @@ $lt-grey:  #f1f1f1;
 
 
 // text colours
-$txtColour: $black;
+$txtColour: $accentGrey;
 $text-color: $txtColour;

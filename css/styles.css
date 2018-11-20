@@ -25,6 +25,21 @@
 .black {
   color: #000; }
 
+.coreBlue {
+  color: #81b5c2; }
+
+.coreGold {
+  color: #ba7233; }
+
+.accentBlue {
+  color: #4e748b; }
+
+.accentGrey {
+  color: #29282a; }
+
+.accentSilver {
+  color: #c0c0c0; }
+
 /* functions */
 /*Mixins*/
 .l-to-r-grad {
@@ -56,6 +71,66 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+
+/*************************************************
+
+    =Reset Styles Begin
+
+**************************************************/
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
+  display: block;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.5;
+  background: white; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important; }
+
+table, th, td {
+  vertical-align: middle; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ''; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a img {
+  border: none; }
+
+:focus {
+  outline: 0; }
+
+img.full {
+  max-width: 100%; }
+
+ol, ul {
+  list-style: none; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2391,23 +2466,38 @@
 * Typographic styles
 *
 *****************************************/
-/*@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');*/
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Myriad Pro';
   font-style: normal;
   font-weight: 300;
-  src: local("Montserrat Light"), local("Montserrat-Light"), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_cJD3gfD_u50.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  src: local("Myriad Pro Light"), local("Myriad-Pro-Light"), url("../assets/fonts/MyriadPro-Light.woff2") format("woff2"); }
 
-.montserrat-font {
-  font-family: "Montserrat", sans-serif; }
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Myriad Pro Regular"), local("Myriad-Pro-Regular"), url("../assets/fonts/MyriadPro-Regular.woff2") format("woff2"); }
 
-.roboto-font {
-  font-family: "Roboto", sans-serif; }
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Myriad Pro Semibold"), local("Myriad-Pro-Semibold"), url("../assets/fonts/MyriadPro-Semibold.woff2") format("woff2"); }
 
-.extra-light {
-  font-weight: 200; }
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Myriad Pro Bold"), local("Myriad-Pro-Bold"), url("../assets/fonts/MyriadPro-Bold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Myriad Pro Black"), local("Myriad-Pro-Black"), url("../assets/fonts/MyriadPro-Black.woff2") format("woff2"); }
+
+.myriad-pro-font {
+  font-family: "Myriad Pro", sans-serif; }
 
 .light {
   font-weight: 300; }
@@ -2418,86 +2508,26 @@
 .semi-bold {
   font-weight: 600; }
 
-.medium {
-  font-weight: 500; }
-
 .bold {
   font-weight: 700; }
+
+.black {
+  font-weight: 900; }
 
 .centre {
   text-align: center; }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Myriad Pro", sans-serif;
   font-weight: 400;
   font-size: 65px;
   font-size: 6.5rem; }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Myriad Pro", sans-serif;
   font-weight: 400;
   font-size: 45px;
   font-size: 4.5rem; }
-
-/*************************************************
-
-    =Reset Styles Begin
-
-**************************************************/
-html {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
-  display: block;
-  box-sizing: border-box; }
-
-body {
-  line-height: 1.5;
-  background: white; }
-
-table {
-  border-collapse: separate;
-  border-spacing: 0; }
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  float: none !important; }
-
-table, th, td {
-  vertical-align: middle; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: ''; }
-
-blockquote, q {
-  quotes: "" ""; }
-
-a img {
-  border: none; }
-
-:focus {
-  outline: 0; }
-
-img.full {
-  max-width: 100%; }
-
-ol, ul {
-  list-style: none; }
 
 /****************************************
 *
@@ -2545,9 +2575,9 @@ body {
   overflow-x: hidden;
 }*/
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Myriad Pro", sans-serif;
   font-weight: 400;
-  color: #000;
+  color: #29282a;
   font-size: 14px;
   font-size: 1.4rem; }
   body > section {
@@ -2836,7 +2866,6 @@ html[xmlns] .slides {
     height: 66px;
     color: transparent;
     text-shadow: none;
-    background-color: #ffd800;
     background-image: url("../assets/images/left-chevron.png");
     background-size: 15px 25px;
     background-position: 25px 19px;
@@ -2848,7 +2877,6 @@ html[xmlns] .slides {
       content: ''; }
     .slider .flexslider .flex-direction-nav a.flex-next {
       color: transparent;
-      background-color: #ffd800;
       background-image: url("../assets/images/right-chevron.png");
       background-size: 15px 25px;
       background-position: 30px 19px;
@@ -2898,7 +2926,7 @@ html[xmlns] .slides {
       height: 54px;
       padding: 0 20px;
       background-color: transparent;
-      color: #000;
+      color: #29282a;
       outline: none;
       font-size: 20px;
       font-size: 2rem;
@@ -2906,13 +2934,13 @@ html[xmlns] .slides {
       border-radius: 6px;
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
-      border: 2px solid #ffd800; }
+      border: 2px solid #ba7233; }
     .subpage.path-user form.user-login-form .form-item input[type=submit],
     .subpage.path-user form.user-login-form .form-actions input[type=submit] {
       width: 33%;
       padding: 0 30px;
-      border-color: #eb602a;
-      background-color: #eb602a;
+      border-color: #81b5c2;
+      background-color: #81b5c2;
       font-size: 20px;
       font-size: 2rem;
       line-height: 54px;
@@ -2924,14 +2952,14 @@ html[xmlns] .slides {
       transition: all 0.5s ease-in-out; }
       .subpage.path-user form.user-login-form .form-item input[type=submit]:hover,
       .subpage.path-user form.user-login-form .form-actions input[type=submit]:hover {
-        background-color: #ffd800;
-        border-color: #ffd800;
-        border: 2px solid #ffd800; }
+        background-color: #ba7233;
+        border-color: #ba7233;
+        border: 2px solid #ba7233; }
     .subpage.path-user form.user-login-form .form-item label,
     .subpage.path-user form.user-login-form .form-actions label {
       font-size: 20px;
       font-size: 2rem;
-      color: #000; }
+      color: #29282a; }
 
 .block-local-tasks-block ul {
   border-bottom: 1px solid #004A97;
@@ -3010,15 +3038,15 @@ header {
         display: block;
         height: 73px;
         padding: 0 40px !important;
-        color: #000;
+        color: #29282a;
         line-height: 73px; }
         header .top-nav ul.navbar-nav > li > a.dropdown-toggle:after {
           display: none; }
       header .top-nav ul.navbar-nav > li:hover {
-        background-color: #eb602a; }
+        background-color: #ba7233; }
         header .top-nav ul.navbar-nav > li:hover a {
           color: #fff;
-          border-color: #eb602a;
+          border-color: #ba7233;
           text-decoration: none; }
       header .top-nav ul.navbar-nav > li.dropdown {
         display: block !important; }
@@ -3046,8 +3074,8 @@ header {
                     padding-top: 10px;
                   }*/ }
             header .top-nav ul.navbar-nav > li.dropdown > ul.dropdown-menu > li > a {
-              color: #000;
-              font-family: "Roboto", sans-serif;
+              color: 900;
+              font-family: "Myriad Pro", sans-serif;
               font-weight: 400;
               font-size: 18px;
               font-size: 1.8rem;
@@ -3056,13 +3084,13 @@ header {
               padding: 3px 0;
               white-space: nowrap; }
               header .top-nav ul.navbar-nav > li.dropdown > ul.dropdown-menu > li > a:hover, header .top-nav ul.navbar-nav > li.dropdown > ul.dropdown-menu > li > a:active {
-                color: #eb602a;
+                color: #ba7233;
                 background-color: transparent;
-                border-bottom: 1px solid #eb602a; }
+                border-bottom: 1px solid #ba7233; }
 
 section div.wysiwyg {
   display: block !important;
-  font-family: "Roboto", sans-serif;
+  font-family: "Myriad Pro", sans-serif;
   font-weight: 300; }
   section div.wysiwyg a {
     display: inline; }
@@ -3080,7 +3108,7 @@ section div.wysiwyg {
       font-size: 1.4rem;
       line-height: 19px; }
   section div.wysiwyg h3 {
-    color: #eb602a;
+    color: #ba7233;
     font-size: 18px;
     font-size: 1.8rem;
     font-weight: 700;
@@ -3102,7 +3130,7 @@ section div.wysiwyg {
       display: block;
       width: 4px;
       height: 4px;
-      background-color: #000;
+      background-color: 900;
       border-radius: 2px;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px; }
@@ -3147,1169 +3175,6 @@ section div.wysiwyg {
 * Global stylesheet
 *
 *****************************************/
-.fixed-width-content {
-  max-width: 1200px;
-  padding: 0;
-  margin: 0 auto; }
-
-.max-width-content {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto; }
-
-.abs-content {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.image-block {
-  overflow: hidden;
-  padding: 0; }
-
-.flex-item:not(:last-child) {
-  margin-right: 30px; }
-
-.flex-row:not(:last-child) {
-  margin-bottom: 30px; }
-
-.orange-bg {
-  background-color: #eb602a;
-  color: #fff; }
-
-.top-nav nav .burger-menu {
-  position: absolute;
-  right: 30px;
-  top: 10px;
-  width: 44px;
-  height: 34px;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  background-color: transparent;
-  background-image: none;
-  outline: none;
-  z-index: 10000; }
-  .top-nav nav .burger-menu .icon-bar {
-    display: block;
-    width: 26px;
-    height: 2px;
-    border-radius: 1px;
-    background-color: #000;
-    margin: 5px; }
-
-body .page-wrapper {
-  position: relative; }
-
-body .canvas {
-  position: relative !important; }
-
-body section {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 30px; }
-  body section.hero {
-    margin-top: 0; }
-
-body > header {
-  height: 97px;
-  overflow: visible; }
-
-body .suntrap-logo {
-  position: absolute;
-  top: 21px;
-  left: 55px;
-  z-index: 2;
-  display: block;
-  width: 176px;
-  height: 191px;
-  background: transparent url("../assets/images/suntrap-logo-x2.png") 0 0 no-repeat;
-  background-size: 176px 191px;
-  text-indent: -100000px; }
-
-body.homepage .hero {
-  height: 605px;
-  position: absolute;
-  top: 97px;
-  left: 0;
-  overflow: hidden; }
-  body.homepage .hero .hero-img {
-    width: 100%;
-    min-height: 605px;
-    object-fit: cover; }
-  body.homepage .hero .social {
-    position: absolute;
-    z-index: 2;
-    top: 27px;
-    right: 25px;
-    width: 170px;
-    height: 70px; }
-    body.homepage .hero .social a {
-      display: inline-block;
-      color: #fff;
-      margin-right: 16px; }
-      body.homepage .hero .social a .fa {
-        font-size: 30px;
-        font-size: 3rem; }
-      body.homepage .hero .social a:nth-child(4) {
-        margin-right: 0; }
-    body.homepage .hero .social p {
-      color: #fff;
-      text-align: right;
-      font-size: 18px;
-      font-size: 1.8rem; }
-      body.homepage .hero .social p a {
-        text-decoration: underline;
-        margin: 0; }
-  body.homepage .hero .hero-content {
-    color: #fff;
-    width: 100%;
-    height: 100%; }
-    body.homepage .hero .hero-content h1 {
-      width: 500px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 306px; }
-      body.homepage .hero .hero-content h1 .subhead {
-        margin-top: -3px;
-        display: block;
-        font-size: 30px;
-        font-size: 3rem; }
-    body.homepage .hero .hero-content .find-out-more {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 442px; }
-    body.homepage .hero .hero-content .go-down {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 40px;
-      display: block;
-      width: 25px;
-      height: 15px;
-      background: transparent url("../assets/images/down-chevron.png") 0 0 no-repeat;
-      background-size: 25px 15px; }
-
-body.homepage .hero + section {
-  margin-top: 645px; }
-
-body.subpage .hero {
-  height: 200px;
-  position: absolute;
-  top: 97px;
-  left: 0;
-  overflow: hidden; }
-  body.subpage .hero .hero-img {
-    width: 100%;
-    min-height: 200px;
-    object-fit: cover; }
-  body.subpage .hero .hero-content {
-    color: #fff;
-    width: 100%;
-    height: 100%; }
-    body.subpage .hero .hero-content h1 {
-      width: 800px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 45px;
-      font-size: 4.5rem;
-      font-weight: 400;
-      text-align: center; }
-
-body.subpage .hero + section {
-  margin-top: 241px; }
-
-body .intro .intro-content .inner {
-  font-size: 24px;
-  font-size: 2.4rem;
-  font-weight: 300;
-  padding: 52px 150px 80px;
-  text-align: center; }
-  body .intro .intro-content .inner p {
-    line-height: 35px; }
-
-body .feature-tiles .tile-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  body .feature-tiles .tile-container .tile {
-    position: relative;
-    display: block;
-    width: 33.333%;
-    height: 400px;
-    transition: all 0.5s ease-in-out; }
-    body .feature-tiles .tile-container .tile:hover .tile-inner .content {
-      opacity: 0;
-      transition: all 0.5s ease-in-out; }
-    body .feature-tiles .tile-container .tile:hover .tile-inner .content-over {
-      opacity: 1;
-      height: 100%;
-      transition: all 0.5s ease-in-out; }
-    body .feature-tiles .tile-container .tile .tile-inner {
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      color: #fff; }
-      body .feature-tiles .tile-container .tile .tile-inner .tile-icon {
-        display: block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 70px;
-        width: 140px;
-        height: 140px;
-        background: transparent url("../assets/images/icons-sprite.png");
-        background-size: 700px 840px; }
-      body .feature-tiles .tile-container .tile .tile-inner div {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%; }
-    body .feature-tiles .tile-container .tile .content {
-      opacity: 1;
-      height: 100%;
-      transition: all 0.5s ease-in-out; }
-      body .feature-tiles .tile-container .tile .content h2 {
-        font-size: 30px;
-        font-size: 3rem;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 107px;
-        width: 185px;
-        text-align: center; }
-    body .feature-tiles .tile-container .tile .content-over {
-      opacity: 0;
-      height: 0;
-      overflow: hidden;
-      padding: 80px 50px 0;
-      transition: all 0.5s ease-in-out; }
-      body .feature-tiles .tile-container .tile .content-over p {
-        font-size: 24px;
-        font-size: 2.4rem;
-        line-height: 27px;
-        font-weight: 300;
-        text-align: justify; }
-      body .feature-tiles .tile-container .tile .content-over .find-out-more {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 80px; }
-    body .feature-tiles .tile-container .tile.activites .tile-icon {
-      background-position: 0 0; }
-    body .feature-tiles .tile-container .tile.adults-corporate .tile-icon {
-      background-position: -140px 0; }
-    body .feature-tiles .tile-container .tile.adventure .tile-icon {
-      background-position: -280px 0; }
-    body .feature-tiles .tile-container .tile.bee .tile-icon {
-      background-position: -420px 0; }
-    body .feature-tiles .tile-container .tile.booking-info .tile-icon {
-      background-position: -560px 0; }
-    body .feature-tiles .tile-container .tile.pumpkin .tile-icon {
-      background-position: 0 -140px; }
-    body .feature-tiles .tile-container .tile.campfire .tile-icon {
-      background-position: -140px -140px; }
-    body .feature-tiles .tile-container .tile.camping .tile-icon {
-      background-position: -280px -140px; }
-    body .feature-tiles .tile-container .tile.chicken .tile-icon {
-      background-position: -420px -140px; }
-    body .feature-tiles .tile-container .tile.christmas .tile-icon {
-      background-position: -560px -140px; }
-    body .feature-tiles .tile-container .tile.corporate .tile-icon {
-      background-position: 0 -280px; }
-    body .feature-tiles .tile-container .tile.easter-eggs .tile-icon {
-      background-position: -140px -280px; }
-    body .feature-tiles .tile-container .tile.event .tile-icon {
-      background-position: -280px -280px; }
-    body .feature-tiles .tile-container .tile.whats-on .tile-icon {
-      background-position: -420px -280px; }
-    body .feature-tiles .tile-container .tile.families .tile-icon {
-      background-position: -560px -280px; }
-    body .feature-tiles .tile-container .tile.garden-lantern .tile-icon {
-      background-position: 0 -420px; }
-    body .feature-tiles .tile-container .tile.globe .tile-icon {
-      background-position: -140px -420px; }
-    body .feature-tiles .tile-container .tile.photography .tile-icon {
-      background-position: -280px -420px; }
-    body .feature-tiles .tile-container .tile.play .tile-icon {
-      background-position: -420px -420px; }
-    body .feature-tiles .tile-container .tile.recycle .tile-icon {
-      background-position: -560px -420px; }
-    body .feature-tiles .tile-container .tile.schools-groups .tile-icon {
-      background-position: 0 -560px; }
-    body .feature-tiles .tile-container .tile.support .tile-icon {
-      background-position: -140px -560px; }
-    body .feature-tiles .tile-container .tile.teams .tile-icon {
-      background-position: -280px -560px; }
-    body .feature-tiles .tile-container .tile.team-building .tile-icon {
-      background-position: -420px -560px; }
-    body .feature-tiles .tile-container .tile.learning .tile-icon {
-      background-position: -560px -560px; }
-    body .feature-tiles .tile-container .tile.tour-guide .tile-icon {
-      background-position: 0 -700px; }
-    body .feature-tiles .tile-container .tile.wand .tile-icon {
-      background-position: -140px -700px; }
-    body .feature-tiles .tile-container .tile.wedding .tile-icon {
-      background-position: -280px -700px; }
-    body .feature-tiles .tile-container .tile.wellbeing .tile-icon {
-      background-position: -420px -700px; }
-    body .feature-tiles .tile-container .tile.blank .tile-icon {
-      background-position: -560px -700px; }
-    body .feature-tiles .tile-container .tile.orange {
-      background-color: #eb602a; }
-    body .feature-tiles .tile-container .tile.mustard {
-      background-color: #f8ad00; }
-    body .feature-tiles .tile-container .tile.yellow {
-      background-color: #ffd800; }
-
-body .slider {
-  height: 609px; }
-  body .slider .content {
-    height: inherit; }
-  body .slider .flexslider {
-    height: inherit; }
-    body .slider .flexslider .slides {
-      height: inherit; }
-      body .slider .flexslider .slides .slide {
-        height: inherit; }
-        body .slider .flexslider .slides .slide .slide-content {
-          height: inherit;
-          position: relative; }
-          body .slider .flexslider .slides .slide .slide-content img.slide-content-img {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%; }
-          body .slider .flexslider .slides .slide .slide-content .inner-content {
-            position: absolute;
-            left: 150px;
-            top: 250px;
-            width: 84%;
-            height: 52%; }
-            body .slider .flexslider .slides .slide .slide-content .inner-content h2 {
-              width: 40%;
-              color: #fff; }
-            body .slider .flexslider .slides .slide .slide-content .inner-content .find-out-more {
-              position: absolute;
-              bottom: 3px;
-              right: 0; }
-
-body .connect {
-  height: 600px; }
-  body .connect > div {
-    height: inherit; }
-  body .connect .connect-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    body .connect .connect-content > div {
-      height: inherit; }
-    body .connect .connect-content .connect-details {
-      width: 380px;
-      background-color: #eb602a;
-      color: #fff;
-      padding: 100px; }
-      body .connect .connect-content .connect-details h2 {
-        font-size: 33px;
-        font-size: 3.3rem;
-        margin-bottom: 22px; }
-      body .connect .connect-content .connect-details p {
-        font-size: 18px;
-        font-size: 1.8rem;
-        font-weight: 300;
-        margin-bottom: 33px; }
-        body .connect .connect-content .connect-details p span {
-          display: block; }
-    body .connect .connect-content .map-wrapper {
-      width: 790px; }
-      body .connect .connect-content .map-wrapper .map {
-        height: 100%; }
-
-body .quotes .quotes-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  body .quotes .quotes-content .quote-block {
-    width: 790px; }
-    body .quotes .quotes-content .quote-block .inner {
-      color: #eb602a; }
-      body .quotes .quotes-content .quote-block .inner.quotes {
-        padding: 150px 110px 0; }
-        body .quotes .quotes-content .quote-block .inner.quotes p {
-          position: relative;
-          display: inline;
-          padding-right: 45px;
-          font-size: 23px;
-          font-size: 2.3rem;
-          font-weight: 400; }
-          body .quotes .quotes-content .quote-block .inner.quotes p:before {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 30px;
-            height: 30px;
-            left: 0;
-            top: -45px;
-            background: transparent url("../assets/images/orange-open-quotes.png") 0 0 no-repeat; }
-          body .quotes .quotes-content .quote-block .inner.quotes p:after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 30px;
-            height: 30px;
-            right: 0;
-            bottom: -10px;
-            background: transparent url("../assets/images/orange-close-quotes.png") 0 0 no-repeat; }
-      body .quotes .quotes-content .quote-block .inner.byline {
-        padding: 10px 110px 0;
-        font-weight: 300; }
-        body .quotes .quotes-content .quote-block .inner.byline p {
-          color: black;
-          font-size: 18px;
-          font-size: 1.8rem; }
-    body .quotes .quotes-content .quote-block.orange-bg .inner p {
-      color: #fff; }
-    body .quotes .quotes-content .quote-block.orange-bg .inner.quotes p:before {
-      background-image: url("../assets/images/white-open-quotes.png"); }
-    body .quotes .quotes-content .quote-block.orange-bg .inner.quotes p:after {
-      background-image: url("../assets/images/white-close-quotes.png"); }
-  body .quotes .quotes-content .image-block {
-    width: 380px; }
-
-body .feature-links .feature-links-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  body .feature-links .feature-links-content .link-box {
-    width: 380px;
-    overflow: hidden; }
-    body .feature-links .feature-links-content .link-box .link-box-link {
-      text-decoration: none; }
-    body .feature-links .feature-links-content .link-box img {
-      transition: all, 0.5s ease-in-out; }
-    body .feature-links .feature-links-content .link-box:hover img {
-      transform: scale(1.1); }
-    body .feature-links .feature-links-content .link-box h3 {
-      position: relative;
-      z-index: 2;
-      height: 88px;
-      font-size: 30px;
-      font-size: 3rem;
-      line-height: 88px;
-      font-weight: 400;
-      text-align: center;
-      color: #fff; }
-    body .feature-links .feature-links-content .link-box:nth-child(1) h3 {
-      background-color: #eb602a; }
-    body .feature-links .feature-links-content .link-box:nth-child(2) h3 {
-      background-color: #f8ad00; }
-    body .feature-links .feature-links-content .link-box:nth-child(3) h3 {
-      background-color: #ffd800; }
-
-body .feature-block .feature-block-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  body .feature-block .feature-block-content .text-block {
-    width: 380px; }
-    body .feature-block .feature-block-content .text-block .inner {
-      padding: 60px 40px 0; }
-      body .feature-block .feature-block-content .text-block .inner p {
-        font-size: 18px;
-        font-size: 1.8rem;
-        font-weight: 300;
-        padding: 0; }
-    body .feature-block .feature-block-content .text-block .find-out-more {
-      margin: 30px 40px; }
-  body .feature-block .feature-block-content .image-block {
-    width: 790px; }
-
-body .event-list .event-list-content .inner h3 {
-  padding: 15px;
-  font-size: 18px;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #eb602a; }
-
-body .event-list .event-list-content .inner p.info {
-  padding: 0 15px;
-  font-size: 18px;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #eb602a; }
-  body .event-list .event-list-content .inner p.info + p.info {
-    margin-top: -1rem; }
-
-body .event-list .event-list-content .inner a.find-out-more {
-  position: absolute;
-  bottom: 20px;
-  left: 15px; }
-
-body .feature-list .content h2 {
-  margin-bottom: 20px;
-  font-size: 33px;
-  font-size: 3.3rem;
-  font-weight: 400;
-  text-align: center;
-  color: #eb602a; }
-
-body .feature-list .content ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  flex-wrap: wrap;
-  padding: 0;
-  margin-bottom: -30px; }
-  body .feature-list .content ul > li {
-    width: calc((100% - 60px) / 3);
-    margin-bottom: 30px; }
-    body .feature-list .content ul > li.flex-item:nth-child(3n+3) {
-      margin-right: 0; }
-    body .feature-list .content ul > li .inner {
-      overflow: hidden;
-      position: relative;
-      height: 100%;
-      width: 100%;
-      background-color: #f1f1f1;
-      padding-bottom: 100px; }
-      body .feature-list .content ul > li .inner img {
-        width: 100%; }
-      body .feature-list .content ul > li .inner .wysiwyg {
-        padding: 0 15px; }
-
-body .staff-list .staff-list-content .staff-block .inner {
-  padding-bottom: 30px; }
-  body .staff-list .staff-list-content .staff-block .inner > h3 {
-    padding: 0 15px;
-    margin-top: 20px;
-    font-size: 30px;
-    font-size: 3rem;
-    font-weight: 400; }
-  body .staff-list .staff-list-content .staff-block .inner > p {
-    padding: 0 15px;
-    font-size: 30px;
-    font-size: 3rem;
-    font-weight: 400;
-    color: #eb602a; }
-
-body .animals-list .animals-list-content .animals-block .inner {
-  padding-bottom: 30px; }
-  body .animals-list .animals-list-content .animals-block .inner > h3 {
-    padding: 0 15px;
-    margin-top: 20px;
-    font-size: 30px;
-    font-size: 3rem;
-    font-weight: 400;
-    color: #eb602a; }
-  body .animals-list .animals-list-content .animals-block .inner > p {
-    padding: 0 15px;
-    font-size: 30px;
-    font-size: 3rem;
-    font-weight: 400;
-    color: #eb602a; }
-
-body .twin-image .twin-image-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  body .twin-image .twin-image-content .image-block {
-    width: 585px; }
-
-body .triple-image .triple-image-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  body .triple-image .triple-image-content .image-block {
-    width: 380px; }
-
-body .single-col-text .single-col-text-content .text-block {
-  text-align: center;
-  padding: 0 15px; }
-  body .single-col-text .single-col-text-content .text-block h2 {
-    font-size: 33px;
-    font-size: 3.3rem;
-    font-weight: 400;
-    color: #eb602a; }
-  body .single-col-text .single-col-text-content .text-block h3 {
-    font-weight: 600;
-    font-size: 18px;
-    font-size: 1.8rem;
-    color: #eb602a; }
-
-body .two-col-text .two-col-text-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  body .two-col-text .two-col-text-content .text-block {
-    width: 585px;
-    padding: 0 15px; }
-    body .two-col-text .two-col-text-content .text-block h2 {
-      font-size: 33px;
-      font-size: 3.3rem;
-      font-weight: 400;
-      color: #eb602a; }
-    body .two-col-text .two-col-text-content .text-block h3 {
-      font-weight: 600;
-      font-size: 18px;
-      font-size: 1.8rem;
-      color: #eb602a; }
-
-body .uneven-cols .uneven-cols-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  body .uneven-cols .uneven-cols-content .text-block {
-    padding: 0 15px; }
-    body .uneven-cols .uneven-cols-content .text-block.col-5-of-12 {
-      width: 475px; }
-    body .uneven-cols .uneven-cols-content .text-block.col-7-of-12 {
-      width: 665px; }
-    body .uneven-cols .uneven-cols-content .text-block.grey-bg {
-      background-color: #f1f1f1;
-      padding: 25px; }
-
-body .booking-form {
-  background-color: #eb602a;
-  min-height: 400px; }
-  body .booking-form .booking-form-content h2 {
-    margin: 50px 0;
-    color: #fff;
-    text-align: center;
-    font-size: 30px;
-    font-size: 3rem;
-    font-weight: 400; }
-  body .booking-form .booking-form-content .form-wrapper .privacy-policy {
-    font-size: 12px;
-    font-size: 1.2rem;
-    color: #fff;
-    margin: -15px 0 0 821px; }
-    body .booking-form .booking-form-content .form-wrapper .privacy-policy a {
-      display: inline;
-      color: #fff;
-      text-decoration: underline; }
-  body .booking-form .booking-form-content form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    max-height: 300px; }
-    body .booking-form .booking-form-content form .form-item,
-    body .booking-form .booking-form-content form .form-actions {
-      display: table-cell;
-      vertical-align: middle;
-      height: 80px;
-      width: 50%;
-      padding: 0 15px; }
-      body .booking-form .booking-form-content form .form-item:nth-child(n+4) label,
-      body .booking-form .booking-form-content form .form-actions:nth-child(n+4) label {
-        padding-left: 15px; }
-      body .booking-form .booking-form-content form .form-item label,
-      body .booking-form .booking-form-content form .form-actions label {
-        display: inline-block;
-        height: auto;
-        margin: 0;
-        font-size: 24px;
-        font-size: 2.4rem;
-        line-height: 1;
-        font-weight: 400;
-        color: #fff;
-        width: 35%;
-        vertical-align: middle; }
-      body .booking-form .booking-form-content form .form-item input,
-      body .booking-form .booking-form-content form .form-actions input {
-        height: 50px;
-        width: 64.3%;
-        padding: 0 10px;
-        background-color: transparent;
-        border: 2px solid #fff;
-        border-radius: 8px;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        outline: none;
-        color: #fff;
-        font-size: 24px;
-        font-size: 2.4rem;
-        vertical-align: middle; }
-        body .booking-form .booking-form-content form .form-item input[type=submit],
-        body .booking-form .booking-form-content form .form-actions input[type=submit] {
-          color: #000;
-          background-color: #fff;
-          margin-left: 204px;
-          transition: all 0.5s ease-in-out; }
-          body .booking-form .booking-form-content form .form-item input[type=submit]:hover,
-          body .booking-form .booking-form-content form .form-actions input[type=submit]:hover {
-            color: #fff;
-            background-color: transparent; }
-
-body .two-col .two-col-content,
-body .two-col .one-col-content,
-body .one-col .two-col-content,
-body .one-col .one-col-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  body .two-col .two-col-content .col,
-  body .two-col .one-col-content .col,
-  body .one-col .two-col-content .col,
-  body .one-col .one-col-content .col {
-    width: 585px;
-    padding: 0; }
-  body .two-col .two-col-content .flex-col,
-  body .two-col .one-col-content .flex-col,
-  body .one-col .two-col-content .flex-col,
-  body .one-col .one-col-content .flex-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; }
-  body .two-col .two-col-content .form-wrapper,
-  body .two-col .one-col-content .form-wrapper,
-  body .one-col .two-col-content .form-wrapper,
-  body .one-col .one-col-content .form-wrapper {
-    height: 100%;
-    width: 100%;
-    background-color: #eb602a;
-    min-height: 770px;
-    padding: 15px; }
-    body .two-col .two-col-content .form-wrapper h2,
-    body .two-col .one-col-content .form-wrapper h2,
-    body .one-col .two-col-content .form-wrapper h2,
-    body .one-col .one-col-content .form-wrapper h2 {
-      font-size: 33px;
-      font-size: 3.3rem;
-      font-weight: 400;
-      color: #fff;
-      text-align: center; }
-    body .two-col .two-col-content .form-wrapper .privacy-policy,
-    body .two-col .one-col-content .form-wrapper .privacy-policy,
-    body .one-col .two-col-content .form-wrapper .privacy-policy,
-    body .one-col .one-col-content .form-wrapper .privacy-policy {
-      font-size: 12px;
-      font-size: 1.2rem;
-      color: #fff;
-      margin: 0 25px; }
-      body .two-col .two-col-content .form-wrapper .privacy-policy a,
-      body .two-col .one-col-content .form-wrapper .privacy-policy a,
-      body .one-col .two-col-content .form-wrapper .privacy-policy a,
-      body .one-col .one-col-content .form-wrapper .privacy-policy a {
-        display: inline;
-        color: #fff;
-        text-decoration: underline; }
-    body .two-col .two-col-content .form-wrapper form,
-    body .two-col .one-col-content .form-wrapper form,
-    body .one-col .two-col-content .form-wrapper form,
-    body .one-col .one-col-content .form-wrapper form {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      flex-wrap: wrap; }
-      body .two-col .two-col-content .form-wrapper form fieldset,
-      body .two-col .two-col-content .form-wrapper form .form-item,
-      body .two-col .two-col-content .form-wrapper form .form-actions,
-      body .two-col .one-col-content .form-wrapper form fieldset,
-      body .two-col .one-col-content .form-wrapper form .form-item,
-      body .two-col .one-col-content .form-wrapper form .form-actions,
-      body .one-col .two-col-content .form-wrapper form fieldset,
-      body .one-col .two-col-content .form-wrapper form .form-item,
-      body .one-col .two-col-content .form-wrapper form .form-actions,
-      body .one-col .one-col-content .form-wrapper form fieldset,
-      body .one-col .one-col-content .form-wrapper form .form-item,
-      body .one-col .one-col-content .form-wrapper form .form-actions {
-        margin: 10px 0;
-        height: auto;
-        min-height: 0;
-        width: 100%;
-        padding: 0 25px; }
-        body .two-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper,
-        body .two-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper,
-        body .two-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper,
-        body .two-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper,
-        body .two-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper,
-        body .two-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper,
-        body .one-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper,
-        body .one-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper,
-        body .one-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper,
-        body .one-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper,
-        body .one-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper,
-        body .one-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          justify-content: flex-start; }
-          body .two-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper > div,
-          body .two-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper div,
-          body .two-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper > div,
-          body .two-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper div,
-          body .two-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper > div,
-          body .two-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper div,
-          body .two-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper > div,
-          body .two-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper div,
-          body .two-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper > div,
-          body .two-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper div,
-          body .two-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper > div,
-          body .two-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper div,
-          body .one-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper > div,
-          body .one-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper div,
-          body .one-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper > div,
-          body .one-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper div,
-          body .one-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper > div,
-          body .one-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper div,
-          body .one-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper > div,
-          body .one-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper div,
-          body .one-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper > div,
-          body .one-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper div,
-          body .one-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper > div,
-          body .one-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper div {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap; }
-            body .two-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item,
-            body .two-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item,
-            body .two-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item,
-            body .two-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item,
-            body .two-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item,
-            body .two-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item,
-            body .two-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item,
-            body .two-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item,
-            body .two-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item,
-            body .two-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item,
-            body .two-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item,
-            body .two-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item,
-            body .one-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item,
-            body .one-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item,
-            body .one-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item,
-            body .one-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item,
-            body .one-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item,
-            body .one-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item,
-            body .one-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item,
-            body .one-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item,
-            body .one-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item,
-            body .one-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item,
-            body .one-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item,
-            body .one-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item {
-              width: auto;
-              padding: 0;
-              justify-content: flex-start; }
-              body .two-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item input,
-              body .two-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item input,
-              body .two-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item input,
-              body .two-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item input,
-              body .two-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item input,
-              body .two-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item input,
-              body .two-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item input,
-              body .two-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item input,
-              body .two-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item input,
-              body .two-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item input,
-              body .two-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item input,
-              body .two-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item input,
-              body .one-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item input,
-              body .one-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item input,
-              body .one-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item input,
-              body .one-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item input,
-              body .one-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item input,
-              body .one-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item input,
-              body .one-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item input,
-              body .one-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item input,
-              body .one-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item input,
-              body .one-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item input,
-              body .one-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item input,
-              body .one-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item input {
-                height: 20px;
-                width: 40px;
-                margin-top: 3px; }
-              body .two-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item label,
-              body .two-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item label,
-              body .two-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item label,
-              body .two-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item label,
-              body .two-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item label,
-              body .two-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item label,
-              body .two-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item label,
-              body .two-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item label,
-              body .two-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item label,
-              body .two-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item label,
-              body .two-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item label,
-              body .two-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item label,
-              body .one-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item label,
-              body .one-col .two-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item label,
-              body .one-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item label,
-              body .one-col .two-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item label,
-              body .one-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item label,
-              body .one-col .two-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item label,
-              body .one-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper > div.form-item label,
-              body .one-col .one-col-content .form-wrapper form fieldset .fieldset-wrapper div.form-item label,
-              body .one-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper > div.form-item label,
-              body .one-col .one-col-content .form-wrapper form .form-item .fieldset-wrapper div.form-item label,
-              body .one-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper > div.form-item label,
-              body .one-col .one-col-content .form-wrapper form .form-actions .fieldset-wrapper div.form-item label {
-                display: inline-block;
-                width: auto;
-                margin: 0 20px 0 10px; }
-        body .two-col .two-col-content .form-wrapper form fieldset legend,
-        body .two-col .two-col-content .form-wrapper form fieldset label,
-        body .two-col .two-col-content .form-wrapper form .form-item legend,
-        body .two-col .two-col-content .form-wrapper form .form-item label,
-        body .two-col .two-col-content .form-wrapper form .form-actions legend,
-        body .two-col .two-col-content .form-wrapper form .form-actions label,
-        body .two-col .one-col-content .form-wrapper form fieldset legend,
-        body .two-col .one-col-content .form-wrapper form fieldset label,
-        body .two-col .one-col-content .form-wrapper form .form-item legend,
-        body .two-col .one-col-content .form-wrapper form .form-item label,
-        body .two-col .one-col-content .form-wrapper form .form-actions legend,
-        body .two-col .one-col-content .form-wrapper form .form-actions label,
-        body .one-col .two-col-content .form-wrapper form fieldset legend,
-        body .one-col .two-col-content .form-wrapper form fieldset label,
-        body .one-col .two-col-content .form-wrapper form .form-item legend,
-        body .one-col .two-col-content .form-wrapper form .form-item label,
-        body .one-col .two-col-content .form-wrapper form .form-actions legend,
-        body .one-col .two-col-content .form-wrapper form .form-actions label,
-        body .one-col .one-col-content .form-wrapper form fieldset legend,
-        body .one-col .one-col-content .form-wrapper form fieldset label,
-        body .one-col .one-col-content .form-wrapper form .form-item legend,
-        body .one-col .one-col-content .form-wrapper form .form-item label,
-        body .one-col .one-col-content .form-wrapper form .form-actions legend,
-        body .one-col .one-col-content .form-wrapper form .form-actions label {
-          display: inline-block;
-          height: auto;
-          margin: 10px 0;
-          font-size: 24px;
-          font-size: 2.4rem;
-          line-height: 1;
-          font-weight: 400;
-          color: #fff;
-          vertical-align: middle; }
-        body .two-col .two-col-content .form-wrapper form fieldset input,
-        body .two-col .two-col-content .form-wrapper form .form-item input,
-        body .two-col .two-col-content .form-wrapper form .form-actions input,
-        body .two-col .one-col-content .form-wrapper form fieldset input,
-        body .two-col .one-col-content .form-wrapper form .form-item input,
-        body .two-col .one-col-content .form-wrapper form .form-actions input,
-        body .one-col .two-col-content .form-wrapper form fieldset input,
-        body .one-col .two-col-content .form-wrapper form .form-item input,
-        body .one-col .two-col-content .form-wrapper form .form-actions input,
-        body .one-col .one-col-content .form-wrapper form fieldset input,
-        body .one-col .one-col-content .form-wrapper form .form-item input,
-        body .one-col .one-col-content .form-wrapper form .form-actions input {
-          height: 50px;
-          width: 100%;
-          padding: 0 10px;
-          background-color: transparent;
-          border: 2px solid #fff;
-          border-radius: 8px;
-          -webkit-border-radius: 8px;
-          -moz-border-radius: 8px;
-          outline: none;
-          color: #fff;
-          font-size: 24px;
-          font-size: 2.4rem;
-          vertical-align: middle; }
-          body .two-col .two-col-content .form-wrapper form fieldset input[type=submit],
-          body .two-col .two-col-content .form-wrapper form .form-item input[type=submit],
-          body .two-col .two-col-content .form-wrapper form .form-actions input[type=submit],
-          body .two-col .one-col-content .form-wrapper form fieldset input[type=submit],
-          body .two-col .one-col-content .form-wrapper form .form-item input[type=submit],
-          body .two-col .one-col-content .form-wrapper form .form-actions input[type=submit],
-          body .one-col .two-col-content .form-wrapper form fieldset input[type=submit],
-          body .one-col .two-col-content .form-wrapper form .form-item input[type=submit],
-          body .one-col .two-col-content .form-wrapper form .form-actions input[type=submit],
-          body .one-col .one-col-content .form-wrapper form fieldset input[type=submit],
-          body .one-col .one-col-content .form-wrapper form .form-item input[type=submit],
-          body .one-col .one-col-content .form-wrapper form .form-actions input[type=submit] {
-            width: 40%;
-            color: #000;
-            background-color: #fff;
-            transition: all 0.5s ease-in-out; }
-            body .two-col .two-col-content .form-wrapper form fieldset input[type=submit]:hover,
-            body .two-col .two-col-content .form-wrapper form .form-item input[type=submit]:hover,
-            body .two-col .two-col-content .form-wrapper form .form-actions input[type=submit]:hover,
-            body .two-col .one-col-content .form-wrapper form fieldset input[type=submit]:hover,
-            body .two-col .one-col-content .form-wrapper form .form-item input[type=submit]:hover,
-            body .two-col .one-col-content .form-wrapper form .form-actions input[type=submit]:hover,
-            body .one-col .two-col-content .form-wrapper form fieldset input[type=submit]:hover,
-            body .one-col .two-col-content .form-wrapper form .form-item input[type=submit]:hover,
-            body .one-col .two-col-content .form-wrapper form .form-actions input[type=submit]:hover,
-            body .one-col .one-col-content .form-wrapper form fieldset input[type=submit]:hover,
-            body .one-col .one-col-content .form-wrapper form .form-item input[type=submit]:hover,
-            body .one-col .one-col-content .form-wrapper form .form-actions input[type=submit]:hover {
-              color: #fff;
-              background-color: transparent; }
-          body .two-col .two-col-content .form-wrapper form fieldset input[type=checkbox],
-          body .two-col .two-col-content .form-wrapper form .form-item input[type=checkbox],
-          body .two-col .two-col-content .form-wrapper form .form-actions input[type=checkbox],
-          body .two-col .one-col-content .form-wrapper form fieldset input[type=checkbox],
-          body .two-col .one-col-content .form-wrapper form .form-item input[type=checkbox],
-          body .two-col .one-col-content .form-wrapper form .form-actions input[type=checkbox],
-          body .one-col .two-col-content .form-wrapper form fieldset input[type=checkbox],
-          body .one-col .two-col-content .form-wrapper form .form-item input[type=checkbox],
-          body .one-col .two-col-content .form-wrapper form .form-actions input[type=checkbox],
-          body .one-col .one-col-content .form-wrapper form fieldset input[type=checkbox],
-          body .one-col .one-col-content .form-wrapper form .form-item input[type=checkbox],
-          body .one-col .one-col-content .form-wrapper form .form-actions input[type=checkbox] {
-            height: 20px;
-            width: 40px; }
-        body .two-col .two-col-content .form-wrapper form fieldset textarea,
-        body .two-col .two-col-content .form-wrapper form .form-item textarea,
-        body .two-col .two-col-content .form-wrapper form .form-actions textarea,
-        body .two-col .one-col-content .form-wrapper form fieldset textarea,
-        body .two-col .one-col-content .form-wrapper form .form-item textarea,
-        body .two-col .one-col-content .form-wrapper form .form-actions textarea,
-        body .one-col .two-col-content .form-wrapper form fieldset textarea,
-        body .one-col .two-col-content .form-wrapper form .form-item textarea,
-        body .one-col .two-col-content .form-wrapper form .form-actions textarea,
-        body .one-col .one-col-content .form-wrapper form fieldset textarea,
-        body .one-col .one-col-content .form-wrapper form .form-item textarea,
-        body .one-col .one-col-content .form-wrapper form .form-actions textarea {
-          height: 150px;
-          width: 100%;
-          padding: 0 10px;
-          background-color: transparent;
-          border: 2px solid #fff;
-          border-radius: 8px;
-          -webkit-border-radius: 8px;
-          -moz-border-radius: 8px;
-          outline: none;
-          color: #fff;
-          font-size: 18px;
-          font-size: 1.8rem; }
-
-body footer {
-  margin-top: 30px;
-  min-height: 267px;
-  background-color: #253746;
-  color: #fff; }
-  body footer .footer-grid.footer-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 167px 75px 100px;
-    grid-template-areas: "sign-up . ." "social . ." "footer-nav copyright logos";
-    height: inherit; }
-  body footer .cell {
-    position: relative; }
-  body footer .sign-up {
-    grid-area: sign-up; }
-    body footer .sign-up .sign-up {
-      margin: 50px 0 0 15px;
-      font-size: 18px;
-      font-size: 1.8rem; }
-    body footer .sign-up form {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      background-color: #fff;
-      width: 333px;
-      margin: 10px 0 0 15px; }
-      body footer .sign-up form .form-item input {
-        height: 54px;
-        width: 279px;
-        border: none;
-        background-color: transparent;
-        padding: 0 20px;
-        outline: none; }
-        body footer .sign-up form .form-item input::placeholder {
-          font-family: "Roboto", sans-serif;
-          font-size: 18px;
-          font-size: 1.8rem;
-          color: #253746;
-          line-height: 54px; }
-      body footer .sign-up form .form-actions {
-        background: transparent url("../assets/images/chevron.png") 50% 50% no-repeat;
-        background-size: 15px 27px; }
-        body footer .sign-up form .form-actions input {
-          height: 54px;
-          width: 54px;
-          border: none;
-          color: #eb602a;
-          font-size: 36px;
-          font-size: 3.6rem;
-          background-color: transparent;
-          outline: none; }
-  body footer .social {
-    grid-area: social;
-    width: 170px;
-    margin-left: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-content: flex-start;
-    padding-top: 40px; }
-    body footer .social a {
-      display: inline-block;
-      color: #fff;
-      margin-right: 16px; }
-      body footer .social a .fa {
-        font-size: 30px;
-        font-size: 3rem; }
-      body footer .social a:nth-child(4) {
-        margin-right: 0; }
-    body footer .social p {
-      color: #fff;
-      text-align: right;
-      font-size: 18px;
-      font-size: 1.8rem; }
-      body footer .social p a {
-        text-decoration: underline;
-        margin: 0; }
-  body footer .footer-nav {
-    grid-area: footer-nav; }
-    body footer .footer-nav nav ul {
-      margin: 43px 0 0 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      list-style: none;
-      padding: 0; }
-      body footer .footer-nav nav ul li {
-        padding: 0 10px; }
-        body footer .footer-nav nav ul li:nth-child(1) {
-          padding-left: 0; }
-        body footer .footer-nav nav ul li:not(:last-child) {
-          border-right: 1px solid; }
-        body footer .footer-nav nav ul li a {
-          font-size: 16px;
-          font-size: 1.6rem;
-          font-weight: 300;
-          color: #fff; }
-  body footer .copyright {
-    grid-area: copyright;
-    font-size: 16px;
-    font-size: 1.6rem;
-    font-weight: 300;
-    text-align: center; }
-    body footer .copyright p {
-      margin-top: 43px; }
-  body footer .logos {
-    grid-area: logos;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-content: flex-end; }
-    body footer .logos .wf-logo {
-      position: absolute;
-      bottom: 40px;
-      right: 30px;
-      display: block;
-      width: 103px;
-      height: 57px;
-      background: transparent url("../assets/images/Waltham-Forest-logo.png");
-      background-size: 103px 57px; }
-    body footer .logos .traded-services-logo {
-      position: absolute;
-      bottom: 40px;
-      left: 30px;
-      display: block;
-      width: 173px;
-      height: 38px;
-      background: transparent url("../assets/images/traded-services-logo.png");
-      background-size: 173px 38px; }
-
 /* Media queries */
 /* Init media queries */
 @media only screen and (max-width: 768px) {
@@ -4321,20 +3186,7 @@ body footer {
 *
 *
 *
-*******************************************************************************************/
-  body {
-    width: 100%;
-    overflow-x: hidden;
-    /*&:before {// TODO: remove for test only
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    content: 'Tablet Portrait';
-    color: $suntrapOrange;
-    @include font-size(26);
-  }*/ }
-    body .connect .connect-content .connect-details {
-      padding: 100px 50px !important; } }
+*******************************************************************************************/ }
 
 @media (max-width: 480px) {
   /******************************************************************************************
@@ -4345,199 +3197,7 @@ body footer {
 *
 *
 *
-*******************************************************************************************/
-  html,
-  body {
-    width: 100%;
-    overflow-x: hidden; }
-  body {
-    /*&:before {// TODO: remove for test only
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    content: 'Mobile only';
-    color: $suntrapOrange;
-    @include font-size(26);
-  }*/ }
-    body a.suntrap-logo {
-      top: 40px;
-      left: 30px;
-      width: 134px;
-      height: 143px;
-      background-size: 134px 143px; }
-    body.homepage .hero .hero-content h1 {
-      font-size: 40px;
-      font-size: 4rem;
-      text-align: center; }
-      body.homepage .hero .hero-content h1 .subhead {
-        font-size: 20px;
-        font-size: 2rem; }
-    body.subpage .hero .hero-content h1 {
-      width: 95%;
-      top: 65%;
-      font-size: 40px;
-      font-size: 4rem;
-      text-align: center; }
-    body .intro {
-      height: auto; }
-      body .intro .intro-content .inner {
-        padding: 15px 30px; }
-    body .uneven-cols .uneven-cols-content {
-      flex-direction: column; }
-      body .uneven-cols .uneven-cols-content .text-block.col-7-of-12, body .uneven-cols .uneven-cols-content .text-block.col-5-of-12 {
-        width: auto; }
-    body .slider {
-      height: 500px; }
-      body .slider .flexslider .slides .slide .slide-content img.slide-content-img {
-        width: auto;
-        height: 100%;
-        object-fit: cover; }
-      body .slider .flexslider .slides .slide .slide-content .inner-content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%; }
-        body .slider .flexslider .slides .slide .slide-content .inner-content h2 {
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 80%;
-          top: 70px;
-          margin: 0;
-          text-align: center; }
-        body .slider .flexslider .slides .slide .slide-content .inner-content .find-out-more {
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 70%;
-          top: 400px; }
-    body .feature-tiles .tile-container {
-      flex-direction: column; }
-      body .feature-tiles .tile-container .tile {
-        width: 100%; }
-    body .feature-block .feature-block-content {
-      flex-direction: column; }
-      body .feature-block .feature-block-content .text-block,
-      body .feature-block .feature-block-content .image-block {
-        width: 100% !important; }
-        body .feature-block .feature-block-content .text-block:not(:last-child),
-        body .feature-block .feature-block-content .image-block:not(:last-child) {
-          margin-bottom: 30px; }
-      body .feature-block .feature-block-content .text-block .inner {
-        padding: 0 40px; }
-      body .feature-block .feature-block-content .text-block a.link-btn {
-        margin-top: 30px; }
-    body .feature-list .content ul {
-      flex-direction: column; }
-      body .feature-list .content ul > li.flex-item {
-        width: 100%;
-        margin: 0 0 30px 0; }
-    body .quotes .quotes-content {
-      flex-direction: column; }
-      body .quotes .quotes-content .quote-block {
-        width: 100%; }
-        body .quotes .quotes-content .quote-block:not(:last-child) {
-          margin-bottom: 30px; }
-        body .quotes .quotes-content .quote-block .inner.quotes {
-          padding: 70px 48px 0; }
-        body .quotes .quotes-content .quote-block .inner.byline {
-          padding: 10px 70px; }
-      body .quotes .quotes-content .image-block {
-        width: 100%; }
-      body .quotes .quotes-content .image-block:not(:last-child),
-      body .quotes .quotes-content .quote-block:not(:last-child) {
-        margin-bottom: 30px; }
-    body .twin-image {
-      display: none; }
-    body .triple-image .triple-image-content {
-      flex-direction: column; }
-      body .triple-image .triple-image-content .image-block {
-        width: 100%;
-        /*img {
-          width: 100px;
-        }*/ }
-        body .triple-image .triple-image-content .image-block:not(:last-child) {
-          margin-bottom: 30px; }
-    body .two-col .two-col-content {
-      flex-direction: column; }
-      body .two-col .two-col-content .flex-item:not(:last-child) {
-        margin-bottom: 30px; }
-      body .two-col .two-col-content .flex-item.col {
-        flex-basis: auto;
-        width: 100%; }
-    body .two-col-text .two-col-text-content {
-      flex-direction: column; }
-      body .two-col-text .two-col-text-content .text-block,
-      body .two-col-text .two-col-text-content .image-block {
-        width: 100%; }
-        body .two-col-text .two-col-text-content .text-block:not(:last-child),
-        body .two-col-text .two-col-text-content .image-block:not(:last-child) {
-          margin-bottom: 30px; }
-    body .single-col-text .single-col-text-content .text-block .inner p {
-      padding: 0; }
-    body .connect {
-      height: 1200px; }
-      body .connect .connect-content {
-        flex-direction: column; }
-        body .connect .connect-content .connect-details,
-        body .connect .connect-content .map-wrapper {
-          width: 100% !important; }
-          body .connect .connect-content .connect-details:not(:last-child),
-          body .connect .connect-content .map-wrapper:not(:last-child) {
-            margin-bottom: 30px; }
-          body .connect .connect-content .connect-details .map,
-          body .connect .connect-content .map-wrapper .map {
-            height: 572px;
-            width: 100%; }
-    body .booking-form .booking-form-content {
-      height: 650px; }
-      body .booking-form .booking-form-content .form-wrapper form {
-        min-height: 550px; }
-        body .booking-form .booking-form-content .form-wrapper form .form-item,
-        body .booking-form .booking-form-content .form-wrapper form .form-actions {
-          width: 100%; }
-          body .booking-form .booking-form-content .form-wrapper form .form-item:nth-child(n+4),
-          body .booking-form .booking-form-content .form-wrapper form .form-actions:nth-child(n+4) {
-            padding-left: 15px; }
-            body .booking-form .booking-form-content .form-wrapper form .form-item:nth-child(n+4) label,
-            body .booking-form .booking-form-content .form-wrapper form .form-actions:nth-child(n+4) label {
-              padding-left: 0; }
-    body .single-image {
-      display: none; }
-    body .feature-links .feature-links-content {
-      flex-direction: column; }
-      body .feature-links .feature-links-content .link-box {
-        width: 100% !important; }
-        body .feature-links .feature-links-content .link-box:not(:last-child) {
-          margin-bottom: 30px; }
-    body footer div.footer-grid.footer-content {
-      grid-template-columns: 100%;
-      grid-template-rows: 1fr 100px 100px 100px 100px;
-      grid-template-areas: "sign-up" "social" "logos" "footer-nav" "copyright";
-      height: auto; }
-      body footer div.footer-grid.footer-content .sign-up {
-        text-align: center; }
-        body footer div.footer-grid.footer-content .sign-up .sign-up {
-          text-align: center;
-          margin-left: 0; }
-        body footer div.footer-grid.footer-content .sign-up form {
-          margin: 10px auto; }
-      body footer div.footer-grid.footer-content .social {
-        margin: 0 auto; }
-      body footer div.footer-grid.footer-content .logos {
-        justify-content: space-around;
-        padding-top: 30px; }
-        body footer div.footer-grid.footer-content .logos a {
-          position: static;
-          margin: 0; }
-      body footer div.footer-grid.footer-content .footer-nav {
-        margin: 0 auto; }
-    body footer .copyright {
-      text-align: right;
-      padding-right: 30px; }
-    body footer .logos a {
-      bottom: 70px !important; } }
+*******************************************************************************************/ }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
   /******************************************************************************************
@@ -4559,92 +3219,7 @@ body footer {
 *
 *
 *
-*******************************************************************************************/
-  /******************************************************************************************
-*
-*
-*
-*   Styles for mobile and hamburger menu
-*
-*
-*
-*******************************************************************************************/
-  body.subpage header {
-    height: 0; }
-  header {
-    height: 0; }
-    header section.max-width-content {
-      padding: 0; }
-    header.page-header .fixed-width-content {
-      padding: 0; }
-    header.page-header .top-nav {
-      z-index: 10;
-      top: 0; }
-      header.page-header .top-nav nav {
-        width: calc(100% + 20px);
-        background-color: #dbdbdb; }
-        header.page-header .top-nav nav.navbar {
-          box-shadow: 0 8px 6px -6px #808084; }
-        header.page-header .top-nav nav ul {
-          overflow: hidden;
-          margin-bottom: 30px; }
-          header.page-header .top-nav nav ul.navbar-nav {
-            margin-top: 50px; }
-            header.page-header .top-nav nav ul.navbar-nav > li {
-              height: auto;
-              padding-left: 40px;
-              overflow: hidden; }
-              header.page-header .top-nav nav ul.navbar-nav > li > a {
-                display: inline;
-                height: auto;
-                line-height: 1;
-                border-bottom: 1px solid transparent;
-                padding: 0 !important;
-                border-right: 0;
-                font-size: 24px;
-                font-size: 2.4rem; }
-              header.page-header .top-nav nav ul.navbar-nav > li.dropdown > ul.dropdown-menu {
-                position: relative;
-                display: block !important;
-                padding: 0;
-                border: 0;
-                margin-bottom: 0;
-                background-color: transparent; }
-                header.page-header .top-nav nav ul.navbar-nav > li.dropdown > ul.dropdown-menu:before {
-                  display: none; }
-                header.page-header .top-nav nav ul.navbar-nav > li.dropdown > ul.dropdown-menu > li {
-                  padding: 5px 0 0 30px; }
-                  header.page-header .top-nav nav ul.navbar-nav > li.dropdown > ul.dropdown-menu > li:last-child {
-                    margin-bottom: 0; }
-                  header.page-header .top-nav nav ul.navbar-nav > li.dropdown > ul.dropdown-menu > li a {
-                    display: inline; }
-      header.page-header .top-nav .burger-menu {
-        z-index: 10; }
-        header.page-header .top-nav .burger-menu.navbar-toggler {
-          border: none; }
-  body.homepage .hero + section {
-    margin-top: 675px; }
-  body.subpage .hero + section {
-    margin-top: 290px; }
-  body footer .footer-grid.footer-content {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 167px 1fr 100px;
-    grid-template-areas: "sign-up logos" "social ." "footer-nav copyright";
-    height: inherit; }
-  body footer .social a {
-    display: inline-block;
-    color: #fff;
-    margin-right: 16px; }
-    body footer .social a .fa {
-      font-size: 30px;
-      font-size: 3rem; }
-    body footer .social a:nth-child(4) {
-      margin-right: 0; }
-  body footer .copyright {
-    text-align: right;
-    padding-right: 30px; }
-  body footer .logos a {
-    bottom: 70px !important; } }
+*******************************************************************************************/ }
 
 @media only screen and (max-width: 1200px) {
   /******************************************************************************************
@@ -4655,53 +3230,7 @@ body footer {
 *
 *
 *
-*******************************************************************************************/
-  body .booking-form .booking-form-content .form-wrapper form .form-item input,
-  body .booking-form .booking-form-content .form-wrapper form .form-actions input {
-    width: calc((100% - 30px) * 0.640); }
-    body .booking-form .booking-form-content .form-wrapper form .form-item input[type=submit],
-    body .booking-form .booking-form-content .form-wrapper form .form-actions input[type=submit] {
-      display: block;
-      margin-left: calc(((100% - 30px) * 0.357) + 14px); }
-  body .booking-form .booking-form-content .form-wrapper p.privacy-policy {
-    text-align: right;
-    margin-left: 0;
-    padding-right: calc((50% - 75px) * 0.357); }
-  body .connect .connect-content .connect-details {
-    width: calc((100% - 60px) / 3); }
-  body .connect .connect-content .map-wrapper {
-    width: calc((2 * ((100% - 60px) / 3)) + 30px); }
-  body .event-list .event-list-content ul > li {
-    width: calc((100% - 60px) / 3); }
-    body .event-list .event-list-content ul > li .inner {
-      overflow: hidden; }
-      body .event-list .event-list-content ul > li .inner img {
-        width: 100%; }
-  body .feature-block .feature-block-content .image-block {
-    width: calc((2 * ((100% - 60px) / 3)) + 30px);
-    overflow: hidden; }
-    body .feature-block .feature-block-content .image-block img {
-      width: 100%; }
-  body .feature-block .feature-block-content .text-block {
-    width: calc((100% - 60px) / 3); }
-  body .feature-links .feature-links-content > .link-box {
-    width: calc((100% - 60px) / 3); }
-  body .single-image .single-image-content {
-    overflow: hidden; }
-    body .single-image .single-image-content img {
-      width: 100%; }
-  body .twin-image .twin-image-content .image-block {
-    width: calc((100% - 30px) / 2);
-    overflow: hidden; }
-    body .twin-image .twin-image-content .image-block img {
-      width: 100%; }
-  body .two-col .two-col-content .col {
-    width: calc((100% - 30px) / 2);
-    overflow: hidden; }
-    body .two-col .two-col-content .col .flex-row {
-      overflow: hidden; }
-      body .two-col .two-col-content .col .flex-row img {
-        width: 100%m; } }
+*******************************************************************************************/ }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait) {
   /******************************************************************************************

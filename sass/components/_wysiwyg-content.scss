@@ -6,7 +6,7 @@ section {
 
     &.wysiwyg {
       display: block!important;
-      font-family: $Roboto-font;
+      font-family: $Myriad-Pro-font;
       font-weight: $light;
 
       a {
@@ -35,7 +35,7 @@ section {
       }
 
       h3 {
-        color: $suntrapOrange;
+        color: $coreGold;
         @include font-size(18);
         font-weight: $bold;
         margin-bottom: 0;
