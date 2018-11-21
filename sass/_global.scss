@@ -64,8 +64,16 @@ body {
       .place-for-everyone-panel {
         width: 900px;
         height: 660px;
+        padding: 60px 163px;
         @include centerer;
         background-color: $white;
+        text-align: center;
+
+        p {
+          @include font-size(20);
+          font-weight: $light;
+          margin-top: 20px;
+        }
       }
     }
 

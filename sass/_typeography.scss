@@ -76,4 +76,26 @@ h2 {
   font-family: $Myriad-Pro-font;
   font-weight: $regular;
   @include font-size(45);
+
+  &.panel-brand-heading {
+    @include font-size(30);
+    padding: 118px 0 40px;
+    font-weight: $semiBold;
+    text-transform: uppercase;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 66px;
+      height: 188px;
+      top:0;
+      left:50%;
+      transform: translateX(-50%);
+      background: transparent url("#{$pathToImages}/brand-heading-bg-.png") 0 0 no-repeat;
+      background-size: 66px 188px;
+    }
+  }
 }
+
