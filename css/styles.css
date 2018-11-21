@@ -2564,16 +2564,16 @@ body {
 *
 *****************************************/
 html {
-  font-size: 10px;
-  width: 100%;
-  margin: 0;
-  padding: 0; }
+  font-size: 10px; }
 
-/*html,
+html,
 body {
-  width:100%;
+  width: 100%;
   overflow-x: hidden;
-}*/
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
 body {
   font-family: "Myriad Pro", sans-serif;
   font-weight: 400;
@@ -2866,7 +2866,6 @@ html[xmlns] .slides {
     height: 66px;
     color: transparent;
     text-shadow: none;
-    background-image: url("../assets/images/left-chevron.png");
     background-size: 15px 25px;
     background-position: 25px 19px;
     background-repeat: no-repeat;
@@ -2877,7 +2876,6 @@ html[xmlns] .slides {
       content: ''; }
     .slider .flexslider .flex-direction-nav a.flex-next {
       color: transparent;
-      background-image: url("../assets/images/right-chevron.png");
       background-size: 15px 25px;
       background-position: 30px 19px;
       background-repeat: no-repeat;
@@ -3175,6 +3173,133 @@ section div.wysiwyg {
 * Global stylesheet
 *
 *****************************************/
+body .page-wrapper h1 {
+  position: absolute;
+  z-index: 10;
+  width: 135px;
+  height: 248px;
+  top: 0;
+  left: 76px;
+  text-indent: -10000px;
+  background: transparent url("../assets/images/60Bricks-logo-sml.jpg") 0 0 no-repeat; }
+
+body .page-wrapper header {
+  position: relative; }
+  body .page-wrapper header .hero {
+    position: relative;
+    height: 690px;
+    overflow: hidden; }
+    body .page-wrapper header .hero .hero-panel {
+      position: absolute;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 175px;
+      background-color: rgba(255, 255, 255, 0.75);
+      padding: 15px 57px; }
+      body .page-wrapper header .hero .hero-panel h2 {
+        text-align: center;
+        color: #4e748b;
+        font-size: 34px;
+        font-size: 3.4rem;
+        font-weight: 400;
+        line-height: 45px; }
+
+body .page-wrapper .place-for-everyone {
+  position: relative; }
+  body .page-wrapper .place-for-everyone img {
+    width: 100%;
+    margin-bottom: -6px; }
+  body .page-wrapper .place-for-everyone .place-for-everyone-panel {
+    width: 900px;
+    height: 660px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; }
+
+body .page-wrapper footer {
+  background-color: #4e748b;
+  color: #fff;
+  min-height: 250px;
+  overflow: hidden; }
+  body .page-wrapper footer a {
+    color: #fff;
+    font-size: 16px;
+    font-size: 1.6rem; }
+  body .page-wrapper footer .sticky-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 55px;
+    margin-bottom: -65px;
+    height: 62px; }
+    body .page-wrapper footer .sticky-footer.fixed {
+      position: fixed;
+      width: 100%;
+      bottom: 62px;
+      z-index: 100;
+      background-color: #4e748b; }
+    body .page-wrapper footer .sticky-footer .social .social-link {
+      font-size: 28px;
+      font-size: 2.8rem;
+      margin-right: 15px; }
+    body .page-wrapper footer .sticky-footer .register a {
+      text-decoration: none;
+      padding-right: 35px;
+      background: transparent url("../assets/images/small-arrow.png") 100% 50% no-repeat;
+      background-size: 22px 14px;
+      font-size: 16px;
+      font-size: 1.6rem;
+      font-weight: 400; }
+      body .page-wrapper footer .sticky-footer .register a:hover {
+        text-decoration: underline; }
+  body .page-wrapper footer .footer-footer {
+    margin: 180px 0 35px;
+    height: 70px;
+    padding: 10px 55px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "navigation copyright logos"; }
+    body .page-wrapper footer .footer-footer a, body .page-wrapper footer .footer-footer p {
+      font-size: 16px;
+      font-size: 1.6rem;
+      font-weight: 300; }
+    body .page-wrapper footer .footer-footer .footer-nav {
+      grid-area: navigation; }
+      body .page-wrapper footer .footer-footer .footer-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 40px; }
+        body .page-wrapper footer .footer-footer .footer-nav ul li a {
+          padding: 0 8px;
+          text-decoration: none; }
+          body .page-wrapper footer .footer-footer .footer-nav ul li a:hover {
+            text-decoration: underline; }
+        body .page-wrapper footer .footer-footer .footer-nav ul li:nth-child(1) a {
+          padding-left: 0; }
+        body .page-wrapper footer .footer-footer .footer-nav ul li:not(:last-child) a {
+          border-right: 1px solid #fff; }
+    body .page-wrapper footer .footer-footer .copyright {
+      grid-area: copyright; }
+      body .page-wrapper footer .footer-footer .copyright p {
+        margin-top: 40px; }
+    body .page-wrapper footer .footer-footer .logos {
+      grid-area: logos;
+      text-align: right; }
+      body .page-wrapper footer .footer-footer .logos a {
+        display: inline-block;
+        width: 106px;
+        height: 59px;
+        background: transparent url("../assets/images/Waltham-Forest-logo.png") 0 0 no-repeat;
+        background-size: 106px 59px; }
+
 /* Media queries */
 /* Init media queries */
 @media only screen and (max-width: 768px) {

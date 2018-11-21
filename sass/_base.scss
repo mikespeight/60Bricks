@@ -6,16 +6,16 @@
 
 html {
   font-size: $baseFontSize;
-  width:100%;
-  margin:0;
-  padding: 0;
 }
 
-/*html,
+html,
 body {
   width:100%;
   overflow-x: hidden;
-}*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
 body {
   font-family: $Myriad-Pro-font;

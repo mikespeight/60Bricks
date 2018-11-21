@@ -35,20 +35,147 @@
     <script src="assets/js/60bricks.js" type="text/javascript" language="JavaScript"></script>
 
 </head>
-<body class="homepage">
+<body class="">
 
-<div class="page-wrapper">tt
-
-    <h1 class="coreBlue">60 Bricks</h1>
-    <h2 class="light coreGold">Light</h2>
-    <h2 class="regular coreGold">Regular</h2>
-    <h2 class="semi-bold coreGold">Semi Bold</h2>
-    <h2 class="bold coreGold">Bold</h2>
-    <h2 class="black coreGold">Black</h2>
+<div class="page-wrapper">
 
 
+    <h1>Sixty Bricks</h1>
+
+    <header>
+
+        <div class="hero">
+
+            <div class="hero-slider slider">
+
+                <div class="flexslider">
+
+                    <ul class="slides">
+                        <li class="slide slide1">
+
+                            <div class="slide-inner">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="assets/images/slide-img-1.jpg, assets/images/slide-img-1-x2.jpg 2x,"> <!-- normal and x2 retina image -->
+                                    <source media="(max-width: 480px)" srcset="assets/images/slide-img-1-mob.jpg"> <!--  mobile image -->
+                                    <img src="assets/images/slide-img-1.jpg" /> <!-- fallback image -->
+                                </picture>
+                            </div>
+
+                        </li>
+
+                        <li class="slide slide2">
+
+                            <div class="slide-inner">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="assets/images/slide-img-2.jpg, assets/images/slide-img-2-x2.jpg 2x,"> <!-- normal and x2 retina image -->
+                                    <source media="(max-width: 480px)" srcset="assets/images/slide-img-2-mob.jpg"> <!--  mobile image -->
+                                    <img src="assets/images/slide-img-2.jpg" /> <!-- fallback image -->
+                                </picture>
+                            </div>
+
+                        </li>
+
+                        <li class="slide slide3">
+
+                            <div class="slide-inner">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="assets/images/slide-img-3.jpg, assets/images/slide-img-3-x2.jpg 2x,"> <!-- normal and x2 retina image -->
+                                    <source media="(max-width: 480px)" srcset="assets/images/slide-img-3-mob.jpg"> <!--  mobile image -->
+                                    <img src="assets/images/slide-img-3.jpg" /> <!-- fallback image -->
+                                </picture>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+                <script>
+					$('.slider .flexslider').flexslider(
+						{
+							animation: "fade",
+							pauseOnAction: true,
+							pauseOnHover: true,
+							useCSS: true,
+							touch: true,
+                            controlNav: false,
+                            dircetionNav: false,
+							slideshow: true,
+							slideshowSpeed: 4000
+						}
+					);
+                </script>
+
+            </div>
+
+            <div class="hero-panel">
+
+                <h2>
+                    Building vibrant, supportive
+                    communities one brick, one home and
+                    one neighbourhood at a time.
+                </h2>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="place-for-everyone">
+
+        <img class="full" src="assets/images/section-2-bg.jpg" role="presentation" alt="">
+
+        <div class="place-for-everyone-panel">
+
+        </div>
+
+    </div>
 
 
+
+
+
+
+
+
+    <footer class="page-footer">
+
+        <div id="sticky__footer" class="sticky-footer fixed">
+
+            <div class="social">
+                <a href="" class="social-link"><i class="fa fa-twitter"></i></a>
+                <a href="" class="social-link"><i class="fa fa-instagram"></i></a>
+                <a href="" class="social-link"><i class="fa fa-facebook-square"></i></a>
+                <a href="" class="social-link"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+
+            <div class="register">
+                <a href="">Register your interest</a>
+            </div>
+
+        </div>
+
+        <div class="footer-footer">
+
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Waltham Forest Council. All rights reserved</p>
+            </div>
+
+            <div class="logos">
+                <a href="https://walthamforest.gov.uk/" class="wf-logo" target="_blank"></a>
+            </div>
+        </div>
+
+    </footer>
 
 </div>
 
