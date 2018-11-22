@@ -21,7 +21,7 @@ body {
 
     .fixed-width-content {
       margin: 0 auto;
-      max-width: 1200px;
+      max-width: 1280px;
     }
 
     header {
@@ -58,7 +58,8 @@ body {
 
     }
 
-    .place-for-everyone {
+    .place-for-everyone,
+    .affordable-homes {
       position: relative;
 
       img {
@@ -66,7 +67,8 @@ body {
         margin-bottom: -6px;
       }
 
-      .place-for-everyone-panel {
+      .place-for-everyone-panel,
+      .affordable-homes-panel {
         width: 900px;
         height: 660px;
         padding: 60px 163px;
@@ -78,6 +80,31 @@ body {
           @include font-size(20);
           font-weight: $light;
           margin-top: 20px;
+        }
+      }
+    }
+
+    .building-communities {
+      position: relative;
+
+      img {
+        width: 100%;
+        margin-bottom: -6px;
+      }
+
+      .building-communities-panel {
+        width: 900px;
+        height: 810px;
+        padding: 60px 163px;
+        @include centerer;
+        background-color: $accentBlue85;
+        text-align: center;
+
+        p {
+          @include font-size(20);
+          font-weight: $light;
+          margin-top: 20px;
+          color: $white;
         }
       }
     }
@@ -101,7 +128,7 @@ body {
                   @include flex-container(row, space-between);
 
                   .slide-content {
-                    width: 40%;
+                    width: 33.333%;
                     text-align: center;
                     padding-top: 104px;
 
@@ -115,6 +142,7 @@ body {
                     }
 
                     p {
+                      padding-right: 0;
                       @include font-size(20);
                       font-weight: $light;
                     }
@@ -132,12 +160,54 @@ body {
                   }
 
                   .slide-image {
-                    width: 60%;
+                    width: 66.666%;
                     max-width: 700px;
                   }
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    .quotes {
+      position: relative;
+      margin-bottom: -6px;
+
+      img {
+        filter: brightness(0.75);
+      }
+
+      .quotes-inner {
+        width: 1280px;
+        margin: 0 auto;
+        padding:0 130px;
+        @include centerer;
+
+        .inner {
+
+          p {
+            @include font-size(33);
+            padding: 0;
+            font-weight: $regular;
+            line-height: 50px;
+            letter-spacing: 1.75px;
+            color: $white;
+            text-align: center;
+          }
+        }
+
+        p {
+
+          &.credit {
+          @include font-size(20);
+            margin-top: 10px;
+          font-weight: $semiBold;
+          color: $white;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 1.75px;
           }
         }
       }

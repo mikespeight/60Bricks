@@ -3249,7 +3249,7 @@ body .page-wrapper h1 {
 
 body .page-wrapper .fixed-width-content {
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1280px; }
 
 body .page-wrapper header {
   position: relative; }
@@ -3276,12 +3276,17 @@ body .page-wrapper header {
         font-weight: 400;
         line-height: 45px; }
 
-body .page-wrapper .place-for-everyone {
+body .page-wrapper .place-for-everyone,
+body .page-wrapper .affordable-homes {
   position: relative; }
-  body .page-wrapper .place-for-everyone img {
+  body .page-wrapper .place-for-everyone img,
+  body .page-wrapper .affordable-homes img {
     width: 100%;
     margin-bottom: -6px; }
-  body .page-wrapper .place-for-everyone .place-for-everyone-panel {
+  body .page-wrapper .place-for-everyone .place-for-everyone-panel,
+  body .page-wrapper .place-for-everyone .affordable-homes-panel,
+  body .page-wrapper .affordable-homes .place-for-everyone-panel,
+  body .page-wrapper .affordable-homes .affordable-homes-panel {
     width: 900px;
     height: 660px;
     padding: 60px 163px;
@@ -3291,11 +3296,36 @@ body .page-wrapper .place-for-everyone {
     transform: translate(-50%, -50%);
     background-color: #fff;
     text-align: center; }
-    body .page-wrapper .place-for-everyone .place-for-everyone-panel p {
+    body .page-wrapper .place-for-everyone .place-for-everyone-panel p,
+    body .page-wrapper .place-for-everyone .affordable-homes-panel p,
+    body .page-wrapper .affordable-homes .place-for-everyone-panel p,
+    body .page-wrapper .affordable-homes .affordable-homes-panel p {
       font-size: 20px;
       font-size: 2rem;
       font-weight: 300;
       margin-top: 20px; }
+
+body .page-wrapper .building-communities {
+  position: relative; }
+  body .page-wrapper .building-communities img {
+    width: 100%;
+    margin-bottom: -6px; }
+  body .page-wrapper .building-communities .building-communities-panel {
+    width: 900px;
+    height: 810px;
+    padding: 60px 163px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(78, 116, 139, 0.85);
+    text-align: center; }
+    body .page-wrapper .building-communities .building-communities-panel p {
+      font-size: 20px;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 20px;
+      color: #fff; }
 
 body .page-wrapper .content-slider {
   max-height: 810px; }
@@ -3308,7 +3338,7 @@ body .page-wrapper .content-slider {
         flex-direction: row;
         justify-content: space-between; }
         body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content {
-          width: 40%;
+          width: 33.333%;
           text-align: center;
           padding-top: 104px; }
           body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner {
@@ -3318,6 +3348,7 @@ body .page-wrapper .content-slider {
             font-size: 2.6rem;
             font-weight: 600; }
           body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content p {
+            padding-right: 0;
             font-size: 20px;
             font-size: 2rem;
             font-weight: 300; }
@@ -3329,8 +3360,40 @@ body .page-wrapper .content-slider {
               left: 50%;
               transform: translateX(-50%); }
         body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-image {
-          width: 60%;
+          width: 66.666%;
           max-width: 700px; }
+
+body .page-wrapper .quotes {
+  position: relative;
+  margin-bottom: -6px; }
+  body .page-wrapper .quotes img {
+    filter: brightness(0.75); }
+  body .page-wrapper .quotes .quotes-inner {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    body .page-wrapper .quotes .quotes-inner .inner p {
+      font-size: 33px;
+      font-size: 3.3rem;
+      padding: 0;
+      font-weight: 400;
+      line-height: 50px;
+      letter-spacing: 1.75px;
+      color: #fff;
+      text-align: center; }
+    body .page-wrapper .quotes .quotes-inner p.credit {
+      font-size: 20px;
+      font-size: 2rem;
+      margin-top: 10px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1.75px; }
 
 body .page-wrapper footer {
   background-color: #4e748b;
