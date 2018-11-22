@@ -34,6 +34,9 @@
 .accentBlue {
   color: #4e748b; }
 
+.accentDkBlue {
+  color: #1e384b; }
+
 .accentGrey {
   color: #29282a; }
 
@@ -2546,6 +2549,24 @@ h2 {
       transform: translateX(-50%);
       background: transparent url("../assets/images/brand-heading-bg-.png") 0 0 no-repeat;
       background-size: 66px 188px; }
+  h2.short-underline {
+    position: relative;
+    font-size: 26px;
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 4.5px;
+    padding-bottom: 15px;
+    margin-bottom: 30px; }
+    h2.short-underline:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ba7233; }
 
 /****************************************
 *
@@ -2600,6 +2621,29 @@ body {
   font-size: 1.4rem; }
   body > section {
     overflow: hidden; }
+
+a.btn.btn-primary,
+button.btn.btn-primary,
+input[type=submit].btn.btn-primary {
+  display: inline-block;
+  height: 50px;
+  border: 2px solid #4e748b;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #4e748b;
+  line-height: 48px;
+  padding: 0 28px;
+  transition: all, 0.33s ease-in-out; }
+  a.btn.btn-primary:hover,
+  button.btn.btn-primary:hover,
+  input[type=submit].btn.btn-primary:hover {
+    color: #fff;
+    background-color: #4e748b; }
 
 /*
  * jQuery FlexSlider v2.2.0
@@ -2884,7 +2928,8 @@ html[xmlns] .slides {
     height: 66px;
     color: transparent;
     text-shadow: none;
-    background-size: 15px 25px;
+    background-image: url("../assets/images/carousel-arrow-left.png");
+    background-size: 44px 44px;
     background-position: 25px 19px;
     background-repeat: no-repeat;
     opacity: 1; }
@@ -2894,8 +2939,9 @@ html[xmlns] .slides {
       content: ''; }
     .slider .flexslider .flex-direction-nav a.flex-next {
       color: transparent;
-      background-size: 15px 25px;
-      background-position: 30px 19px;
+      background-image: url("../assets/images/carousel-arrow-right.png");
+      background-size: 44px 44px;
+      background-position: 11px 19px;
       background-repeat: no-repeat;
       opacity: 1; }
       .slider .flexslider .flex-direction-nav a.flex-next:hover {
@@ -3201,6 +3247,10 @@ body .page-wrapper h1 {
   text-indent: -10000px;
   background: transparent url("../assets/images/60Bricks-logo-sml.jpg") 0 0 no-repeat; }
 
+body .page-wrapper .fixed-width-content {
+  margin: 0 auto;
+  max-width: 1200px; }
+
 body .page-wrapper header {
   position: relative; }
   body .page-wrapper header .hero {
@@ -3246,6 +3296,41 @@ body .page-wrapper .place-for-everyone {
       font-size: 2rem;
       font-weight: 300;
       margin-top: 20px; }
+
+body .page-wrapper .content-slider {
+  max-height: 810px; }
+  body .page-wrapper .content-slider .fixed-width-content.slider {
+    padding: 110px 0; }
+    body .page-wrapper .content-slider .fixed-width-content.slider ul.slides {
+      padding: 0 83px; }
+      body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content {
+          width: 40%;
+          text-align: center;
+          padding-top: 104px; }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner {
+            padding: 0 26px; }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content h2 {
+            font-size: 26px;
+            font-size: 2.6rem;
+            font-weight: 600; }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content p {
+            font-size: 20px;
+            font-size: 2rem;
+            font-weight: 300; }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper {
+            margin-top: 50px;
+            position: relative; }
+            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper a.btn {
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%); }
+        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-image {
+          width: 60%;
+          max-width: 700px; }
 
 body .page-wrapper footer {
   background-color: #4e748b;

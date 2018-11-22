@@ -32,9 +32,8 @@
         height:66px;
         color: transparent;
         text-shadow: none;
-        //background-color: $suntrapYellow2;
-        //background-image: url('#{$pathToImages}/left-chevron.png');
-        background-size: 15px 25px;
+        background-image: url('#{$pathToImages}/carousel-arrow-left.png');
+        background-size: 44px 44px;
         background-position: 25px 19px;
         background-repeat: no-repeat;
         opacity:1;
@@ -49,10 +48,9 @@
 
         &.flex-next {
           color: transparent;
-          //background-color: $suntrapYellow2;
-          //background-image: url('#{$pathToImages}/right-chevron.png');
-          background-size: 15px 25px;
-          background-position: 30px 19px;
+          background-image: url('#{$pathToImages}/carousel-arrow-right.png');
+          background-size: 44px 44px;
+          background-position: 11px 19px;
           background-repeat: no-repeat;
           opacity: 1;
 

@@ -19,6 +19,11 @@ body {
 
     }
 
+    .fixed-width-content {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
     header {
       position: relative;
 
@@ -73,6 +78,67 @@ body {
           @include font-size(20);
           font-weight: $light;
           margin-top: 20px;
+        }
+      }
+    }
+
+    .content-slider {
+      max-height: 810px;
+
+      .fixed-width-content {
+
+        &.slider {
+          padding: 110px 0;
+
+          ul {
+
+            &.slides {
+              padding:0 83px;
+
+              .slide {
+
+                .slide-inner {
+                  @include flex-container(row, space-between);
+
+                  .slide-content {
+                    width: 40%;
+                    text-align: center;
+                    padding-top: 104px;
+
+                    .inner {
+                      padding: 0 26px;
+                    }
+
+                    h2 {
+                      @include font-size(26);
+                      font-weight: $semiBold;
+                    }
+
+                    p {
+                      @include font-size(20);
+                      font-weight: $light;
+                    }
+
+                    .btn-wrapper {
+                      margin-top: 50px;
+                      position: relative;
+
+                      a {
+                        &.btn {
+                          @include centerH
+                        }
+                      }
+                    }
+                  }
+
+                  .slide-image {
+                    width: 60%;
+                    max-width: 700px;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
