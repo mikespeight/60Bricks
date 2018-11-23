@@ -16,5 +16,5 @@ blockquote:before, blockquote:after, q:before, q:after {content:'';}
 blockquote, q {quotes:"" "";}
 a img {border:none;}
 :focus {outline:0;}
-img.full {max-width: 100%}
+img.full {max-width: 100%;display: block}
 ol, ul {list-style: none}

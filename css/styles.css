@@ -130,7 +130,8 @@ a img {
   outline: 0; }
 
 img.full {
-  max-width: 100%; }
+  max-width: 100%;
+  display: block; }
 
 ol, ul {
   list-style: none; }
@@ -3364,11 +3365,11 @@ body .page-wrapper .content-slider {
           max-width: 700px; }
 
 body .page-wrapper .quotes {
-  position: relative;
-  margin-bottom: -6px; }
+  position: relative; }
   body .page-wrapper .quotes img {
     width: 100%;
-    filter: brightness(0.75); }
+    filter: brightness(0.75);
+    margin: 0; }
   body .page-wrapper .quotes .quotes-inner {
     width: 1280px;
     margin: 0 auto;
@@ -3420,7 +3421,6 @@ body .page-wrapper .quotes {
       letter-spacing: 1.75px; }
 
 body .page-wrapper footer {
-  margin-top: -5px;
   background-color: #4e748b;
   color: #fff;
   min-height: 180px;
