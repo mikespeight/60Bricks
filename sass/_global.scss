@@ -196,6 +196,35 @@ body {
             letter-spacing: 1.75px;
             color: $white;
             text-align: center;
+
+            span {
+              position: relative;
+              margin: 0 50px;
+
+              &:before {
+                position: absolute;
+                content: '';
+                left:-51px;
+                top: -8;
+                display: block;
+                width: 44px;
+                height:35px;
+                background: transparent url("#{$pathToImages}/open-quote.png") 0 0 no-repeat;
+                background-size: 44px 35px;
+              }
+
+              &:after {
+                position: absolute;
+                content: '';
+                right:-47px;
+                bottom: -10px;
+                display: block;
+                width: 44px;
+                height:35px;
+                background: transparent url("#{$pathToImages}/close-quote.png") 0 0 no-repeat;
+                background-size: 44px 35px;
+              }
+            }
           }
         }
 
@@ -215,9 +244,10 @@ body {
     }
 
     footer {
+      margin-top: -5px;
       background-color: $accentBlue;
       color: $white;
-      min-height: 250px;
+      min-height: 180px;
       overflow: hidden;
 
       a {
@@ -265,7 +295,7 @@ body {
       }
 
       .footer-footer {
-        margin:  180px 0 35px;
+        margin:  110px 0 35px;
         height: 70px;
         padding: 10px 55px;
         display: grid;

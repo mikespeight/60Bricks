@@ -3367,6 +3367,7 @@ body .page-wrapper .quotes {
   position: relative;
   margin-bottom: -6px; }
   body .page-wrapper .quotes img {
+    width: 100%;
     filter: brightness(0.75); }
   body .page-wrapper .quotes .quotes-inner {
     width: 1280px;
@@ -3385,6 +3386,29 @@ body .page-wrapper .quotes {
       letter-spacing: 1.75px;
       color: #fff;
       text-align: center; }
+      body .page-wrapper .quotes .quotes-inner .inner p span {
+        position: relative;
+        margin: 0 50px; }
+        body .page-wrapper .quotes .quotes-inner .inner p span:before {
+          position: absolute;
+          content: '';
+          left: -51px;
+          top: -8;
+          display: block;
+          width: 44px;
+          height: 35px;
+          background: transparent url("../assets/images/open-quote.png") 0 0 no-repeat;
+          background-size: 44px 35px; }
+        body .page-wrapper .quotes .quotes-inner .inner p span:after {
+          position: absolute;
+          content: '';
+          right: -47px;
+          bottom: -10px;
+          display: block;
+          width: 44px;
+          height: 35px;
+          background: transparent url("../assets/images/close-quote.png") 0 0 no-repeat;
+          background-size: 44px 35px; }
     body .page-wrapper .quotes .quotes-inner p.credit {
       font-size: 20px;
       font-size: 2rem;
@@ -3396,9 +3420,10 @@ body .page-wrapper .quotes {
       letter-spacing: 1.75px; }
 
 body .page-wrapper footer {
+  margin-top: -5px;
   background-color: #4e748b;
   color: #fff;
-  min-height: 250px;
+  min-height: 180px;
   overflow: hidden; }
   body .page-wrapper footer a {
     color: #fff;
@@ -3432,7 +3457,7 @@ body .page-wrapper footer {
       body .page-wrapper footer .sticky-footer .register a:hover {
         text-decoration: underline; }
   body .page-wrapper footer .footer-footer {
-    margin: 180px 0 35px;
+    margin: 110px 0 35px;
     height: 70px;
     padding: 10px 55px;
     display: grid;
