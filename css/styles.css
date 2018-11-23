@@ -3549,7 +3549,18 @@ body .page-wrapper footer {
 *
 *
 *
-*   Styles that cover the transition from 1200px to 992px i.e. between desktop and tablet
+*   Styles for std screen down i.e. < 1200px
+*
+*
+*
+*******************************************************************************************/ }
+
+@media only screen and (max-width: 767px) {
+  /******************************************************************************************
+*
+*
+*
+*   Styles for devices below tablet portrait i.e. <= 767px
 *
 *
 *
