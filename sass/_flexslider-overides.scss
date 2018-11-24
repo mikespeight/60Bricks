@@ -4,6 +4,19 @@
 *
 **********************************************/
 
+.hero-slider {
+
+  &.slider {
+
+    .flexslider {
+
+      .flex-direction-nav {
+        display: none;
+      }
+    }
+  }
+}
+
 .slider {
 
   .flexslider {

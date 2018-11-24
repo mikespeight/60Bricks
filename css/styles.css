@@ -2910,6 +2910,9 @@ html[xmlns] .slides {
 * styles to override flexslider default styles
 *
 **********************************************/
+.hero-slider.slider .flexslider .flex-direction-nav {
+  display: none; }
+
 .slider .flexslider {
   border: none;
   margin: 0 0 55px;
@@ -3258,6 +3261,8 @@ body .page-wrapper header {
     position: relative;
     height: 690px;
     overflow: hidden; }
+    body .page-wrapper header .hero .hero-slider .flexslider .slides .slide .slide-inner img {
+      display: block; }
     body .page-wrapper header .hero .hero-panel {
       position: absolute;
       z-index: 2;
@@ -3544,7 +3549,7 @@ body .page-wrapper footer {
 *
 *******************************************************************************************/ }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   /******************************************************************************************
 *
 *
@@ -3553,7 +3558,117 @@ body .page-wrapper footer {
 *
 *
 *
-*******************************************************************************************/ }
+*******************************************************************************************/
+  body .page-wrapper h1 {
+    width: 10.546vw;
+    height: 19.375vw;
+    background-size: 10.546vw 19.375vw; }
+  body .page-wrapper header .hero {
+    height: 53.906vw; }
+    body .page-wrapper header .hero .hero-panel {
+      width: 54.687vw;
+      height: 13.671vw; }
+      body .page-wrapper header .hero .hero-panel h2 {
+        font-size: 2.656vw;
+        line-height: 3.515vw; }
+  body .page-wrapper .place-for-everyone .place-for-everyone-panel,
+  body .page-wrapper .place-for-everyone .affordable-homes-panel,
+  body .page-wrapper .affordable-homes .place-for-everyone-panel,
+  body .page-wrapper .affordable-homes .affordable-homes-panel {
+    width: 70.312vw;
+    height: 46.875vw;
+    padding: 4.687vw 12.734vw; }
+    body .page-wrapper .place-for-everyone .place-for-everyone-panel h2.panel-brand-heading,
+    body .page-wrapper .place-for-everyone .affordable-homes-panel h2.panel-brand-heading,
+    body .page-wrapper .affordable-homes .place-for-everyone-panel h2.panel-brand-heading,
+    body .page-wrapper .affordable-homes .affordable-homes-panel h2.panel-brand-heading {
+      font-size: 2.343vw;
+      padding: 9.218vw 0 3.125vw; }
+      body .page-wrapper .place-for-everyone .place-for-everyone-panel h2.panel-brand-heading:after,
+      body .page-wrapper .place-for-everyone .affordable-homes-panel h2.panel-brand-heading:after,
+      body .page-wrapper .affordable-homes .place-for-everyone-panel h2.panel-brand-heading:after,
+      body .page-wrapper .affordable-homes .affordable-homes-panel h2.panel-brand-heading:after {
+        width: 5.156vw;
+        height: 14.687vw;
+        background-size: 5.156vw 14.687vw; }
+    body .page-wrapper .place-for-everyone .place-for-everyone-panel p,
+    body .page-wrapper .place-for-everyone .affordable-homes-panel p,
+    body .page-wrapper .affordable-homes .place-for-everyone-panel p,
+    body .page-wrapper .affordable-homes .affordable-homes-panel p {
+      font-size: 1.562vw;
+      padding: 0;
+      line-height: 2.187vw;
+      margin: 1.562vw 0 1.953vw; }
+  body .page-wrapper .building-communities .building-communities-panel {
+    width: 70.312vw;
+    height: 63.281vw;
+    padding: 4.687vw 12.734vw; }
+    body .page-wrapper .building-communities .building-communities-panel h2.panel-brand-heading {
+      font-size: 2.343vw;
+      padding: 9.218vw 0 3.125vw; }
+      body .page-wrapper .building-communities .building-communities-panel h2.panel-brand-heading:after {
+        width: 5.156vw;
+        height: 14.687vw;
+        background-size: 5.156vw 14.687vw; }
+    body .page-wrapper .building-communities .building-communities-panel p {
+      font-size: 1.562vw;
+      padding: 0;
+      line-height: 2.187vw;
+      margin: 1.562vw 0 1.953vw; }
+  body .page-wrapper .content-slider {
+    max-height: 63.281vw; }
+    body .page-wrapper .content-slider .fixed-width-content.slider {
+      padding: 8.593vw 0; }
+      body .page-wrapper .content-slider .fixed-width-content.slider .flexslider {
+        margin: 0 0 4.296vw; }
+        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-prev {
+          left: 1.390vw; }
+        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-next {
+          right: 1.390vw; }
+        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-direction-nav a {
+          width: 5.703vw;
+          height: 5.156vw;
+          margin: -1.562vw; }
+          body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-direction-nav a.flex-next, body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-direction-nav a.flex-prev {
+            background-size: 3.437vw 3.437vw;
+            background-position: 0.859vw 1.484vw; }
+      body .page-wrapper .content-slider .fixed-width-content.slider ul.slides {
+        padding: 0 6.484vw; }
+        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content {
+          padding-top: 8.125vw; }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner {
+            padding: 0 2.031vw; }
+            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner p {
+              font-size: 1.562vw;
+              margin: 0.390vw 0 1.953vw;
+              line-height: 2.187vw; }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper {
+            margin-top: 3.906vw; }
+            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper a.btn.btn-primary {
+              height: 3.906vw;
+              border-radius: 0.39vw;
+              -webkit-border-radius: 0.39vw;
+              -moz-border-radius: 0.39vw;
+              font-size: 1.406vw;
+              line-height: 3.75vw;
+              padding: 0 2.187vw; }
+        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-image {
+          max-width: 54.687vw; }
+  body .page-wrapper .quotes .quotes-inner {
+    width: 100vw;
+    padding: 0 10.156vw; }
+    body .page-wrapper .quotes .quotes-inner .inner p {
+      font-size: 2.578vw;
+      line-height: 3.906vw;
+      letter-spacing: 0.136vw; }
+    body .page-wrapper .quotes .quotes-inner p.credit {
+      font-size: 1.562vw;
+      margin-top: 0.781vw;
+      letter-spacing: 0.136vw; }
+  body .page-wrapper footer .footer-footer .footer-nav ul {
+    margin-top: 3.125vw; }
+  body .page-wrapper footer .footer-footer .copyright p {
+    margin-top: 3.125vw; } }
 
 @media only screen and (max-width: 767px) {
   /******************************************************************************************

@@ -32,7 +32,24 @@ body {
         height: 690px;
         overflow: hidden;
 
-        .hero-slider {}
+        .hero-slider {
+
+          .flexslider {
+
+            .slides {
+
+              .slide {
+
+                .slide-inner {
+
+                  img {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
 
         .hero-panel {
           position: absolute;
