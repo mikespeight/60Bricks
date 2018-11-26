@@ -8,3 +8,144 @@
 *
 *******************************************************************************************/
 
+body {
+
+  .page-wrapper {
+
+    header {
+
+      .hero {
+
+        .hero-slider {
+          height: inherit;
+
+          .flexslider {
+            height: inherit;
+          }
+
+          &.slider {
+
+            ul {
+
+              &.slides {
+                height: inherit;
+
+                li {
+
+                  &.slide {
+                    height: inherit;
+
+                    .slide-inner {
+                      height: inherit;
+
+                      picture {
+                        height: inherit;
+
+                        img {
+                          height: inherit;
+                          width: auto;
+                          object-fit: cover;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .place-for-everyone,
+    .affordable-homes {
+      height: 830px;
+
+      img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .place-for-everyone-panel,
+      .affordable-homes-panel {
+        width: 650px;
+        height: auto;
+        padding:60px;
+      }
+    }
+
+    .building-communities {
+      height:950px;
+
+      img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .building-communities-panel {
+        width: 650px;
+        height: auto;
+        padding:60px;
+      }
+    }
+
+    .content-slider {
+      height:1000px;
+      max-height: none;
+
+      .fixed-width-content {
+
+        &.slider {
+          padding:60px 0;
+
+          .flexslider {
+
+            ul {
+
+              &.slides {
+
+                li {
+
+                  &.slide {
+
+                    .slide-inner {
+                      flex-direction: column-reverse;
+
+                      .slide-content {
+                        width: 100%;
+                      }
+
+                      .slide-image {
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .quotes {
+      height: 800px;
+
+      img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .quotes-inner {
+        width: 100%;
+        padding: 0 70px;
+      }
+    }
+  }
+}

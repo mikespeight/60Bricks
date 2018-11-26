@@ -3547,9 +3547,73 @@ body .page-wrapper footer {
 *
 *
 *
-*******************************************************************************************/ }
+*******************************************************************************************/
+  body .page-wrapper header .hero .hero-slider {
+    height: inherit; }
+    body .page-wrapper header .hero .hero-slider .flexslider {
+      height: inherit; }
+    body .page-wrapper header .hero .hero-slider.slider ul.slides {
+      height: inherit; }
+      body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide {
+        height: inherit; }
+        body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner {
+          height: inherit; }
+          body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner picture {
+            height: inherit; }
+            body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner picture img {
+              height: inherit;
+              width: auto;
+              object-fit: cover; }
+  body .page-wrapper .place-for-everyone,
+  body .page-wrapper .affordable-homes {
+    height: 830px; }
+    body .page-wrapper .place-for-everyone img,
+    body .page-wrapper .affordable-homes img {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      object-fit: cover; }
+    body .page-wrapper .place-for-everyone .place-for-everyone-panel,
+    body .page-wrapper .place-for-everyone .affordable-homes-panel,
+    body .page-wrapper .affordable-homes .place-for-everyone-panel,
+    body .page-wrapper .affordable-homes .affordable-homes-panel {
+      width: 650px;
+      height: auto;
+      padding: 60px; }
+  body .page-wrapper .building-communities {
+    height: 950px; }
+    body .page-wrapper .building-communities img {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      object-fit: cover; }
+    body .page-wrapper .building-communities .building-communities-panel {
+      width: 650px;
+      height: auto;
+      padding: 60px; }
+  body .page-wrapper .content-slider {
+    height: 1000px;
+    max-height: none; }
+    body .page-wrapper .content-slider .fixed-width-content.slider {
+      padding: 60px 0; }
+      body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner {
+        flex-direction: column-reverse; }
+        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-content {
+          width: 100%; }
+        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-image {
+          width: 100%; }
+  body .page-wrapper .quotes {
+    height: 800px; }
+    body .page-wrapper .quotes img {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      object-fit: cover; }
+    body .page-wrapper .quotes .quotes-inner {
+      width: 100%;
+      padding: 0 70px; } }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 991px) and (max-width: 1280px) {
   /******************************************************************************************
 *
 *
