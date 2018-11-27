@@ -124,7 +124,11 @@
 
     <section class="place-for-everyone">
 
-        <img class="full" src="assets/images/section-2-bg-x2.jpg" role="presentation" alt="">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="assets/images/section-2-bg.jpg, assets/images/section-2-bg-x2.jpg 2x,"> <!-- normal and x2 retina image -->
+            <source media="(max-width: 480px)" srcset="assets/images/section-2-bg-mob.jpg"> <!--  mobile image -->
+            <img class="full" src="assets/images/section-2-bg.jpg" role="presentation" alt=""> <!-- fallback image -->
+        </picture>
 
         <div class="place-for-everyone-panel">
 
@@ -297,7 +301,12 @@
 
     <section class="affordable-homes">
 
-        <img class="full" src="assets/images/affordable-homes-bg-x2.jpg" role="presentation" alt="">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="assets/images/affordable-homes-bg.jpg, assets/images/affordable-homes-bg-x2.jpg 2x,"> <!-- normal and x2 retina image -->
+            <source media="(max-width: 480px)" srcset="assets/images/affordable-homes-bg-mob.jpg"> <!--  mobile image -->
+            <img class="full" src="assets/images/affordable-homes-bg.jpg" role="presentation" alt=""> <!-- fallback image -->
+        </picture>
+
 
         <div class="affordable-homes-panel">
 
