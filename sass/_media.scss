@@ -224,44 +224,44 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
 /* Init media queries */
 
 // Everything below and including the portrait width of the tablet
-@include tablet-portrait-and-below {
+/*@include tablet-portrait-and-below {
 
   @import "media-queries/tablet-portrait-down";
 
-}
+}*/
 
 // Everything above and including the portrait width of the tablet
-@include tablet-portrait-and-up {
+/*@include tablet-portrait-and-up {
 
-  //@import "media-queries/tablet-portrait-up";
+  @import "media-queries/tablet-portrait-up";
 
-}
+}*/
 
 // Up to and including the tablet landscape
-@include tablet-landscape-and-below {
+/*@include tablet-landscape-and-below {
 
-  //@import "media-queries/tablet-landscape-down";
+  @import "media-queries/tablet-landscape-down";
 
-}
+}*/
 
-@include tablet-portrait-only {
+/*@include tablet-portrait-only {
 
-  //@import "media-queries/tablet-portrait-only";
+  @import "media-queries/tablet-portrait-only";
 
-}
+}*/
 
 // Both portrait and landscape
-@include mobile-only {
+/*@include mobile-only {
 
   @import "media-queries/mobile-only";
 
-}
+}*/
 
-@include ipad-pro-portrait {
+/*@include ipad-pro-portrait {
 
   @import "media-queries/iPad-pro-portrait";
 
-}
+}*/
 
 @include screen-md-and-below {
 
@@ -269,11 +269,11 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
 
 }
 
-@include desktop-and-up {
+/*@include desktop-and-up {
 
-  //@import "media-queries/desktop-and-up";
+  @import "media-queries/desktop-and-up";
 
-}
+}*/
 
 @include screen-std-and-below {
   @import "media-queries/std-screen-down";
@@ -283,12 +283,12 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
   @import "media-queries/below-tablet-portrait";
 }
 
-@include retina2 {
+/*@include retina2 {
 
   @media only screen and (min-width: 834px) and (orientation: portrait) {
 
     @import "media-queries/iPad-pro-portrait";
 
   }
-}
+}*/
 

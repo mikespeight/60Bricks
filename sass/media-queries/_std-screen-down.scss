@@ -10,6 +10,12 @@
 
 body {
 
+  &:before {
+    content: '1280 to 992';
+    position: absolute;
+    z-index: 1000;
+  }
+
   .page-wrapper {
 
     h1 {

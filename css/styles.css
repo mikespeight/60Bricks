@@ -3241,6 +3241,11 @@ section div.wysiwyg {
 * Global stylesheet
 *
 *****************************************/
+body:before {
+  content: '1280 and above';
+  position: absolute;
+  z-index: 1000; }
+
 body .page-wrapper h1 {
   position: absolute;
   z-index: 10;
@@ -3505,39 +3510,36 @@ body .page-wrapper footer {
 
 /* Media queries */
 /* Init media queries */
-@media only screen and (max-width: 768px) {
-  /******************************************************************************************
-*
-*
-*
-*   Styles for tablet portrait down i.e. < 768px
-*
-*
-*
-*******************************************************************************************/ }
+/*@include tablet-portrait-and-below {
 
-@media (max-width: 480px) {
-  /******************************************************************************************
-*
-*
-*
-*   Styles for mobile down i.e. < 480px
-*
-*
-*
-*******************************************************************************************/ }
+  @import "media-queries/tablet-portrait-down";
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
-  /******************************************************************************************
-*
-*
-*
-*   Styles for iPad pro portrait
-*
-*
-*
-*******************************************************************************************/ }
+}*/
+/*@include tablet-portrait-and-up {
 
+  @import "media-queries/tablet-portrait-up";
+
+}*/
+/*@include tablet-landscape-and-below {
+
+  @import "media-queries/tablet-landscape-down";
+
+}*/
+/*@include tablet-portrait-only {
+
+  @import "media-queries/tablet-portrait-only";
+
+}*/
+/*@include mobile-only {
+
+  @import "media-queries/mobile-only";
+
+}*/
+/*@include ipad-pro-portrait {
+
+  @import "media-queries/iPad-pro-portrait";
+
+}*/
 @media only screen and (max-width: 992px) {
   /******************************************************************************************
 *
@@ -3548,6 +3550,10 @@ body .page-wrapper footer {
 *
 *
 *******************************************************************************************/
+  body:before {
+    content: '992 to 768';
+    position: absolute;
+    z-index: 1000; }
   body .page-wrapper header .hero .hero-slider {
     height: inherit; }
     body .page-wrapper header .hero .hero-slider .flexslider {
@@ -3611,8 +3617,19 @@ body .page-wrapper footer {
       object-fit: cover; }
     body .page-wrapper .quotes .quotes-inner {
       width: 100%;
-      padding: 0 70px; } }
+      padding: 0 80px; }
+  body .page-wrapper footer .footer-footer {
+    height: 140px;
+    margin-top: 40px;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "navigation navigation" "copyright logos"; } }
 
+/*@include desktop-and-up {
+
+  @import "media-queries/desktop-and-up";
+
+}*/
 @media only screen and (min-width: 991px) and (max-width: 1280px) {
   /******************************************************************************************
 *
@@ -3623,6 +3640,10 @@ body .page-wrapper footer {
 *
 *
 *******************************************************************************************/
+  body:before {
+    content: '1280 to 992';
+    position: absolute;
+    z-index: 1000; }
   body .page-wrapper h1 {
     width: 10.546vw;
     height: 19.375vw;
@@ -3743,17 +3764,95 @@ body .page-wrapper footer {
 *
 *
 *
-*******************************************************************************************/ }
+*******************************************************************************************/
+  body {
+    width: 100%; }
+    body:before {
+      content: 'below 767';
+      position: absolute;
+      z-index: 1000; }
+    body .page-wrapper {
+      position: relative; }
+      body .page-wrapper header .hero {
+        height: 750px; }
+        body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner picture img {
+          width: 100%; }
+        body .page-wrapper header .hero .hero-panel {
+          width: 85%;
+          height: auto;
+          top: 500px; }
+      body .page-wrapper .place-for-everyone,
+      body .page-wrapper .affordable-homes {
+        height: 1100px; }
+        body .page-wrapper .place-for-everyone .place-for-everyone-panel,
+        body .page-wrapper .place-for-everyone .affordable-homes-panel,
+        body .page-wrapper .affordable-homes .place-for-everyone-panel,
+        body .page-wrapper .affordable-homes .affordable-homes-panel {
+          width: 85%;
+          padding: 30px; }
+          body .page-wrapper .place-for-everyone .place-for-everyone-panel h2,
+          body .page-wrapper .place-for-everyone .affordable-homes-panel h2,
+          body .page-wrapper .affordable-homes .place-for-everyone-panel h2,
+          body .page-wrapper .affordable-homes .affordable-homes-panel h2 {
+            padding-top: 90px; }
+          body .page-wrapper .place-for-everyone .place-for-everyone-panel .wysiwyg p,
+          body .page-wrapper .place-for-everyone .affordable-homes-panel .wysiwyg p,
+          body .page-wrapper .affordable-homes .place-for-everyone-panel .wysiwyg p,
+          body .page-wrapper .affordable-homes .affordable-homes-panel .wysiwyg p {
+            padding: 0; }
+      body .page-wrapper .building-communities {
+        height: 1260px; }
+        body .page-wrapper .building-communities .building-communities-panel {
+          width: 85%;
+          padding: 30px; }
+          body .page-wrapper .building-communities .building-communities-panel h2 {
+            padding-top: 90px; }
+          body .page-wrapper .building-communities .building-communities-panel .wysiwyg p {
+            padding: 0; }
+      body .page-wrapper .content-slider {
+        height: 800px; }
+        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-content {
+          padding-top: 50px; }
+          body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-content .wysiwyg {
+            padding: 0; }
+            body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-content .wysiwyg p {
+              padding: 0; }
+          body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-content .btn-wrapper a {
+            width: 100%; }
+      body .page-wrapper .quotes {
+        height: 1200px; }
+        body .page-wrapper .quotes .quotes-inner {
+          width: 85%;
+          padding: 0; }
+      body .page-wrapper footer {
+        height: 350px; }
+        body .page-wrapper footer .sticky-footer {
+          height: 120px;
+          flex-direction: column-reverse;
+          align-items: center; }
+          body .page-wrapper footer .sticky-footer.fixed {
+            position: static; }
+        body .page-wrapper footer .footer-footer {
+          height: 175px;
+          padding: 10px 36px;
+          margin-top: 90px;
+          grid-template-rows: 33.333% 33.333% 33.333%;
+          grid-template-columns: 100%;
+          grid-template-areas: "logos" "navigation" "copyright"; }
+          body .page-wrapper footer .footer-footer .footer-nav ul {
+            justify-content: center; }
+          body .page-wrapper footer .footer-footer .logos {
+            text-align: center; }
+          body .page-wrapper footer .footer-footer .copyright p {
+            text-align: center; } }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait) {
-  /******************************************************************************************
-*
-*
-*
-*   Styles for iPad pro portrait
-*
-*
-*
-*******************************************************************************************/ }
+/*@include retina2 {
+
+  @media only screen and (min-width: 834px) and (orientation: portrait) {
+
+    @import "media-queries/iPad-pro-portrait";
+
+  }
+}*/
 
 /*# sourceMappingURL=styles.css.map */

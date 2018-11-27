@@ -5,6 +5,12 @@
 *****************************************/
 body {
 
+  &:before {
+    content: '1280 and above';
+    position: absolute;
+    z-index: 1000;
+  }
+
   .page-wrapper {
 
     h1 {
