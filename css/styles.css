@@ -2537,6 +2537,7 @@ h2 {
     font-size: 3rem;
     padding: 118px 0 40px;
     font-weight: 600;
+    letter-spacing: 5.5px;
     text-transform: uppercase;
     position: relative; }
     h2.panel-brand-heading:after {
@@ -3243,7 +3244,9 @@ section div.wysiwyg {
 *****************************************/
 body:before {
   content: '1280 and above';
-  position: absolute;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.75);
   z-index: 1000; }
 
 body .page-wrapper h1 {
@@ -3339,7 +3342,8 @@ body .page-wrapper .building-communities {
       color: #fff; }
 
 body .page-wrapper .content-slider {
-  max-height: 810px; }
+  max-height: 810px;
+  min-height: 650px; }
   body .page-wrapper .content-slider .fixed-width-content.slider {
     padding: 110px 0; }
     body .page-wrapper .content-slider .fixed-width-content.slider ul.slides {
@@ -3552,7 +3556,9 @@ body .page-wrapper footer {
 *******************************************************************************************/
   body:before {
     content: '992 to 768';
-    position: absolute;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.75);
     z-index: 1000; }
   body .page-wrapper header .hero .hero-slider {
     height: inherit; }
@@ -3642,7 +3648,9 @@ body .page-wrapper footer {
 *******************************************************************************************/
   body:before {
     content: '1280 to 992';
-    position: absolute;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.75);
     z-index: 1000; }
   body .page-wrapper h1 {
     width: 10.546vw;
@@ -3769,18 +3777,26 @@ body .page-wrapper footer {
     width: 100%; }
     body:before {
       content: 'below 767';
-      position: absolute;
+      position: fixed;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.75);
       z-index: 1000; }
     body .page-wrapper {
       position: relative; }
+      body .page-wrapper h1 {
+        left: 50%;
+        transform: translateX(-50%); }
       body .page-wrapper header .hero {
-        height: 750px; }
+        height: 650px; }
         body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner picture img {
           width: 100%; }
         body .page-wrapper header .hero .hero-panel {
           width: 85%;
           height: auto;
-          top: 500px; }
+          top: 450px; }
+          body .page-wrapper header .hero .hero-panel h2 {
+            font-size: 28px;
+            font-size: 2.8rem; }
       body .page-wrapper .place-for-everyone,
       body .page-wrapper .affordable-homes {
         height: 1100px; }
@@ -3824,6 +3840,9 @@ body .page-wrapper footer {
         body .page-wrapper .quotes .quotes-inner {
           width: 85%;
           padding: 0; }
+          body .page-wrapper .quotes .quotes-inner p {
+            font-size: 28px;
+            font-size: 2.8rem; }
       body .page-wrapper footer {
         height: 350px; }
         body .page-wrapper footer .sticky-footer {
