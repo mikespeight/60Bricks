@@ -3242,275 +3242,269 @@ section div.wysiwyg {
 * Global stylesheet
 *
 *****************************************/
-body:before {
-  content: '1280 and above';
-  position: fixed;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.75);
-  z-index: 1000; }
-
-body .page-wrapper h1 {
-  position: absolute;
-  z-index: 10;
-  width: 135px;
-  height: 248px;
-  top: 0;
-  left: 76px;
-  text-indent: -10000px;
-  background: transparent url("../assets/images/60Bricks-logo-sml.jpg") 0 0 no-repeat; }
-
-body .page-wrapper .fixed-width-content {
-  margin: 0 auto;
-  max-width: 1280px; }
-
-body .page-wrapper header {
-  position: relative; }
-  body .page-wrapper header .hero {
-    position: relative;
-    height: 690px;
-    overflow: hidden; }
-    body .page-wrapper header .hero .hero-slider .flexslider .slides .slide .slide-inner img {
-      display: block; }
-    body .page-wrapper header .hero .hero-panel {
-      position: absolute;
-      z-index: 2;
+body {
+  /*&:before {
+    content: '1280 and above';
+    position: fixed;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1000;
+  }*/ }
+  body .page-wrapper h1 {
+    position: absolute;
+    z-index: 10;
+    width: 135px;
+    height: 248px;
+    top: 0;
+    left: 76px;
+    text-indent: -10000px;
+    background: transparent url("../assets/images/60Bricks-logo-sml.jpg") 0 0 no-repeat; }
+  body .page-wrapper .fixed-width-content {
+    margin: 0 auto;
+    max-width: 1280px; }
+  body .page-wrapper header {
+    position: relative; }
+    body .page-wrapper header .hero {
+      position: relative;
+      height: 690px;
+      overflow: hidden; }
+      body .page-wrapper header .hero .hero-slider .flexslider .slides .slide .slide-inner img {
+        display: block; }
+      body .page-wrapper header .hero .hero-panel {
+        position: absolute;
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 700px;
+        height: 175px;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 15px 57px; }
+        body .page-wrapper header .hero .hero-panel h2 {
+          text-align: center;
+          color: #4e748b;
+          font-size: 34px;
+          font-size: 3.4rem;
+          font-weight: 400;
+          line-height: 45px; }
+  body .page-wrapper .place-for-everyone,
+  body .page-wrapper .affordable-homes {
+    position: relative; }
+    body .page-wrapper .place-for-everyone img,
+    body .page-wrapper .affordable-homes img {
+      width: 100%;
+      margin-bottom: -6px; }
+    body .page-wrapper .place-for-everyone .place-for-everyone-panel,
+    body .page-wrapper .place-for-everyone .affordable-homes-panel,
+    body .page-wrapper .affordable-homes .place-for-everyone-panel,
+    body .page-wrapper .affordable-homes .affordable-homes-panel {
+      width: 900px;
+      height: 660px;
+      padding: 60px 163px;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 700px;
-      height: 175px;
-      background-color: rgba(255, 255, 255, 0.75);
-      padding: 15px 57px; }
-      body .page-wrapper header .hero .hero-panel h2 {
-        text-align: center;
-        color: #4e748b;
-        font-size: 34px;
-        font-size: 3.4rem;
-        font-weight: 400;
-        line-height: 45px; }
-
-body .page-wrapper .place-for-everyone,
-body .page-wrapper .affordable-homes {
-  position: relative; }
-  body .page-wrapper .place-for-everyone img,
-  body .page-wrapper .affordable-homes img {
-    width: 100%;
-    margin-bottom: -6px; }
-  body .page-wrapper .place-for-everyone .place-for-everyone-panel,
-  body .page-wrapper .place-for-everyone .affordable-homes-panel,
-  body .page-wrapper .affordable-homes .place-for-everyone-panel,
-  body .page-wrapper .affordable-homes .affordable-homes-panel {
-    width: 900px;
-    height: 660px;
-    padding: 60px 163px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    text-align: center; }
-    body .page-wrapper .place-for-everyone .place-for-everyone-panel p,
-    body .page-wrapper .place-for-everyone .affordable-homes-panel p,
-    body .page-wrapper .affordable-homes .place-for-everyone-panel p,
-    body .page-wrapper .affordable-homes .affordable-homes-panel p {
-      font-size: 20px;
-      font-size: 2rem;
-      font-weight: 300;
-      margin-top: 20px; }
-
-body .page-wrapper .building-communities {
-  position: relative; }
-  body .page-wrapper .building-communities img {
-    width: 100%;
-    margin-bottom: -6px; }
-  body .page-wrapper .building-communities .building-communities-panel {
-    width: 900px;
-    height: 810px;
-    padding: 60px 163px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(78, 116, 139, 0.85);
-    text-align: center; }
-    body .page-wrapper .building-communities .building-communities-panel p {
-      font-size: 20px;
-      font-size: 2rem;
-      font-weight: 300;
-      margin-top: 20px;
-      color: #fff; }
-
-body .page-wrapper .content-slider {
-  max-height: 810px;
-  min-height: 650px; }
-  body .page-wrapper .content-slider .fixed-width-content.slider {
-    padding: 110px 0; }
-    body .page-wrapper .content-slider .fixed-width-content.slider ul.slides {
-      padding: 0 83px; }
-      body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content {
-          width: 33.333%;
-          text-align: center;
-          padding-top: 104px; }
-          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner {
-            padding: 0 26px; }
-          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content h2 {
-            font-size: 26px;
-            font-size: 2.6rem;
-            font-weight: 600; }
-          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content p {
-            padding-right: 0;
-            font-size: 20px;
-            font-size: 2rem;
-            font-weight: 300; }
-          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper {
-            margin-top: 50px;
-            position: relative; }
-            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper a.btn {
-              position: absolute;
-              left: 50%;
-              transform: translateX(-50%); }
-        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-image {
-          width: 66.666%;
-          max-width: 700px; }
-
-body .page-wrapper .quotes {
-  position: relative; }
-  body .page-wrapper .quotes img {
-    width: 100%;
-    filter: brightness(0.75);
-    margin: 0; }
-  body .page-wrapper .quotes .quotes-inner {
-    width: 1280px;
-    margin: 0 auto;
-    padding: 0 130px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    body .page-wrapper .quotes .quotes-inner .inner p {
-      font-size: 33px;
-      font-size: 3.3rem;
-      padding: 0;
-      font-weight: 400;
-      line-height: 50px;
-      letter-spacing: 1.75px;
-      color: #fff;
+      background-color: #fff;
       text-align: center; }
-      body .page-wrapper .quotes .quotes-inner .inner p span {
-        position: relative;
-        margin: 0 50px; }
-        body .page-wrapper .quotes .quotes-inner .inner p span:before {
-          position: absolute;
-          content: '';
-          left: -51px;
-          top: -8;
-          display: block;
-          width: 44px;
-          height: 35px;
-          background: transparent url("../assets/images/open-quote.png") 0 0 no-repeat;
-          background-size: 44px 35px; }
-        body .page-wrapper .quotes .quotes-inner .inner p span:after {
-          position: absolute;
-          content: '';
-          right: -47px;
-          bottom: -10px;
-          display: block;
-          width: 44px;
-          height: 35px;
-          background: transparent url("../assets/images/close-quote.png") 0 0 no-repeat;
-          background-size: 44px 35px; }
-    body .page-wrapper .quotes .quotes-inner p.credit {
-      font-size: 20px;
-      font-size: 2rem;
-      margin-top: 10px;
-      font-weight: 600;
-      color: #fff;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 1.75px; }
-
-body .page-wrapper footer {
-  background-color: #4e748b;
-  color: #fff;
-  min-height: 180px;
-  overflow: hidden; }
-  body .page-wrapper footer a {
-    color: #fff;
-    font-size: 16px;
-    font-size: 1.6rem; }
-  body .page-wrapper footer .sticky-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 55px;
-    margin-bottom: -65px;
-    height: 62px; }
-    body .page-wrapper footer .sticky-footer.fixed {
-      position: fixed;
+      body .page-wrapper .place-for-everyone .place-for-everyone-panel p,
+      body .page-wrapper .place-for-everyone .affordable-homes-panel p,
+      body .page-wrapper .affordable-homes .place-for-everyone-panel p,
+      body .page-wrapper .affordable-homes .affordable-homes-panel p {
+        font-size: 20px;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 20px; }
+  body .page-wrapper .building-communities {
+    position: relative; }
+    body .page-wrapper .building-communities img {
       width: 100%;
-      bottom: 62px;
-      z-index: 100;
-      background-color: #4e748b; }
-    body .page-wrapper footer .sticky-footer .social .social-link {
-      font-size: 28px;
-      font-size: 2.8rem;
-      margin-right: 15px; }
-    body .page-wrapper footer .sticky-footer .register a {
-      text-decoration: none;
-      padding-right: 35px;
-      background: transparent url("../assets/images/small-arrow.png") 100% 50% no-repeat;
-      background-size: 22px 14px;
+      margin-bottom: -6px; }
+    body .page-wrapper .building-communities .building-communities-panel {
+      width: 900px;
+      height: 810px;
+      padding: 60px 163px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(78, 116, 139, 0.85);
+      text-align: center; }
+      body .page-wrapper .building-communities .building-communities-panel p {
+        font-size: 20px;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 20px;
+        color: #fff; }
+  body .page-wrapper .content-slider {
+    max-height: 810px;
+    min-height: 650px; }
+    body .page-wrapper .content-slider .fixed-width-content.slider {
+      padding: 110px 0; }
+      body .page-wrapper .content-slider .fixed-width-content.slider ul.slides {
+        padding: 0 83px; }
+        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content {
+            width: 33.333%;
+            text-align: center;
+            padding-top: 104px; }
+            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner {
+              padding: 0 26px; }
+            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content h2 {
+              font-size: 26px;
+              font-size: 2.6rem;
+              font-weight: 600; }
+            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content p {
+              padding-right: 0;
+              font-size: 20px;
+              font-size: 2rem;
+              font-weight: 300; }
+            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper {
+              margin-top: 50px;
+              position: relative; }
+              body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper a.btn {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%); }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-image {
+            width: 66.666%;
+            max-width: 700px; }
+  body .page-wrapper .quotes {
+    position: relative; }
+    body .page-wrapper .quotes img {
+      width: 100%;
+      filter: brightness(0.75);
+      margin: 0; }
+    body .page-wrapper .quotes .quotes-inner {
+      width: 1280px;
+      margin: 0 auto;
+      padding: 0 130px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      body .page-wrapper .quotes .quotes-inner .inner p {
+        font-size: 33px;
+        font-size: 3.3rem;
+        padding: 0;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: 1.75px;
+        color: #fff;
+        text-align: center; }
+        body .page-wrapper .quotes .quotes-inner .inner p span {
+          position: relative;
+          margin: 0 50px; }
+          body .page-wrapper .quotes .quotes-inner .inner p span:before {
+            position: absolute;
+            content: '';
+            left: -51px;
+            top: -8;
+            display: block;
+            width: 44px;
+            height: 35px;
+            background: transparent url("../assets/images/open-quote.png") 0 0 no-repeat;
+            background-size: 44px 35px; }
+          body .page-wrapper .quotes .quotes-inner .inner p span:after {
+            position: absolute;
+            content: '';
+            right: -47px;
+            bottom: -10px;
+            display: block;
+            width: 44px;
+            height: 35px;
+            background: transparent url("../assets/images/close-quote.png") 0 0 no-repeat;
+            background-size: 44px 35px; }
+      body .page-wrapper .quotes .quotes-inner p.credit {
+        font-size: 20px;
+        font-size: 2rem;
+        margin-top: 10px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1.75px; }
+  body .page-wrapper footer {
+    background-color: #4e748b;
+    color: #fff;
+    min-height: 180px;
+    overflow: hidden; }
+    body .page-wrapper footer a {
+      color: #fff;
       font-size: 16px;
-      font-size: 1.6rem;
-      font-weight: 400; }
-      body .page-wrapper footer .sticky-footer .register a:hover {
-        text-decoration: underline; }
-  body .page-wrapper footer .footer-footer {
-    margin: 110px 0 35px;
-    height: 70px;
-    padding: 10px 55px;
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "navigation copyright logos"; }
-    body .page-wrapper footer .footer-footer a, body .page-wrapper footer .footer-footer p {
-      font-size: 16px;
-      font-size: 1.6rem;
-      font-weight: 300; }
-    body .page-wrapper footer .footer-footer .footer-nav {
-      grid-area: navigation; }
-      body .page-wrapper footer .footer-footer .footer-nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-top: 40px; }
-        body .page-wrapper footer .footer-footer .footer-nav ul li a {
-          padding: 0 8px;
-          text-decoration: none; }
-          body .page-wrapper footer .footer-footer .footer-nav ul li a:hover {
-            text-decoration: underline; }
-        body .page-wrapper footer .footer-footer .footer-nav ul li:nth-child(1) a {
-          padding-left: 0; }
-        body .page-wrapper footer .footer-footer .footer-nav ul li:not(:last-child) a {
-          border-right: 1px solid #fff; }
-    body .page-wrapper footer .footer-footer .copyright {
-      grid-area: copyright; }
-      body .page-wrapper footer .footer-footer .copyright p {
-        margin-top: 40px; }
-    body .page-wrapper footer .footer-footer .logos {
-      grid-area: logos;
-      text-align: right; }
-      body .page-wrapper footer .footer-footer .logos a {
-        display: inline-block;
-        width: 106px;
-        height: 59px;
-        background: transparent url("../assets/images/Waltham-Forest-logo.png") 0 0 no-repeat;
-        background-size: 106px 59px; }
+      font-size: 1.6rem; }
+    body .page-wrapper footer .sticky-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 55px;
+      margin-bottom: -65px;
+      height: 62px; }
+      body .page-wrapper footer .sticky-footer.fixed {
+        position: fixed;
+        width: 100%;
+        bottom: 62px;
+        z-index: 100;
+        background-color: #4e748b; }
+      body .page-wrapper footer .sticky-footer .social .social-link {
+        font-size: 28px;
+        font-size: 2.8rem;
+        margin-right: 15px; }
+      body .page-wrapper footer .sticky-footer .register a {
+        text-decoration: none;
+        padding-right: 35px;
+        background: transparent url("../assets/images/small-arrow.png") 100% 50% no-repeat;
+        background-size: 22px 14px;
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-weight: 400; }
+        body .page-wrapper footer .sticky-footer .register a:hover {
+          text-decoration: underline; }
+    body .page-wrapper footer .footer-footer {
+      margin: 110px 0 35px;
+      height: 70px;
+      padding: 10px 55px;
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "navigation copyright logos"; }
+      body .page-wrapper footer .footer-footer a, body .page-wrapper footer .footer-footer p {
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-weight: 300; }
+      body .page-wrapper footer .footer-footer .footer-nav {
+        grid-area: navigation; }
+        body .page-wrapper footer .footer-footer .footer-nav ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          margin-top: 40px; }
+          body .page-wrapper footer .footer-footer .footer-nav ul li a {
+            padding: 0 8px;
+            text-decoration: none; }
+            body .page-wrapper footer .footer-footer .footer-nav ul li a:hover {
+              text-decoration: underline; }
+          body .page-wrapper footer .footer-footer .footer-nav ul li:nth-child(1) a {
+            padding-left: 0; }
+          body .page-wrapper footer .footer-footer .footer-nav ul li:not(:last-child) a {
+            border-right: 1px solid #fff; }
+      body .page-wrapper footer .footer-footer .copyright {
+        grid-area: copyright; }
+        body .page-wrapper footer .footer-footer .copyright p {
+          margin-top: 40px; }
+      body .page-wrapper footer .footer-footer .logos {
+        grid-area: logos;
+        text-align: right; }
+        body .page-wrapper footer .footer-footer .logos a {
+          display: inline-block;
+          width: 106px;
+          height: 59px;
+          background: transparent url("../assets/images/Waltham-Forest-logo.png") 0 0 no-repeat;
+          background-size: 106px 59px; }
 
 /* Media queries */
 /* Init media queries */
@@ -3554,82 +3548,84 @@ body .page-wrapper footer {
 *
 *
 *******************************************************************************************/
-  body:before {
+  body {
+    /*&:before {
     content: '992 to 768';
     position: fixed;
-    top: 0;
+    top:0;
     background-color: rgba(255, 255, 255, 0.75);
-    z-index: 1000; }
-  body .page-wrapper header .hero .hero-slider {
-    height: inherit; }
-    body .page-wrapper header .hero .hero-slider .flexslider {
+    z-index: 1000;
+  }*/ }
+    body .page-wrapper header .hero .hero-slider {
       height: inherit; }
-    body .page-wrapper header .hero .hero-slider.slider ul.slides {
-      height: inherit; }
-      body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide {
+      body .page-wrapper header .hero .hero-slider .flexslider {
         height: inherit; }
-        body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner {
+      body .page-wrapper header .hero .hero-slider.slider ul.slides {
+        height: inherit; }
+        body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide {
           height: inherit; }
-          body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner picture {
+          body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner {
             height: inherit; }
-            body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner picture img {
-              height: inherit;
-              width: auto;
-              object-fit: cover; }
-  body .page-wrapper .place-for-everyone,
-  body .page-wrapper .affordable-homes {
-    height: 830px; }
-    body .page-wrapper .place-for-everyone img,
-    body .page-wrapper .affordable-homes img {
-      position: absolute;
-      width: auto;
-      height: 100%;
-      object-fit: cover; }
-    body .page-wrapper .place-for-everyone .place-for-everyone-panel,
-    body .page-wrapper .place-for-everyone .affordable-homes-panel,
-    body .page-wrapper .affordable-homes .place-for-everyone-panel,
-    body .page-wrapper .affordable-homes .affordable-homes-panel {
-      width: 650px;
-      height: auto;
-      padding: 60px; }
-  body .page-wrapper .building-communities {
-    height: 950px; }
-    body .page-wrapper .building-communities img {
-      position: absolute;
-      width: auto;
-      height: 100%;
-      object-fit: cover; }
-    body .page-wrapper .building-communities .building-communities-panel {
-      width: 650px;
-      height: auto;
-      padding: 60px; }
-  body .page-wrapper .content-slider {
-    height: 1000px;
-    max-height: none; }
-    body .page-wrapper .content-slider .fixed-width-content.slider {
-      padding: 60px 0; }
-      body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner {
-        flex-direction: column-reverse; }
-        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-content {
-          width: 100%; }
-        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-image {
-          width: 100%; }
-  body .page-wrapper .quotes {
-    height: 800px; }
-    body .page-wrapper .quotes img {
-      position: absolute;
-      width: auto;
-      height: 100%;
-      object-fit: cover; }
-    body .page-wrapper .quotes .quotes-inner {
-      width: 100%;
-      padding: 0 80px; }
-  body .page-wrapper footer .footer-footer {
-    height: 140px;
-    margin-top: 40px;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "navigation navigation" "copyright logos"; } }
+            body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner picture {
+              height: inherit; }
+              body .page-wrapper header .hero .hero-slider.slider ul.slides li.slide .slide-inner picture img {
+                height: inherit;
+                width: auto;
+                object-fit: cover; }
+    body .page-wrapper .place-for-everyone,
+    body .page-wrapper .affordable-homes {
+      height: 830px; }
+      body .page-wrapper .place-for-everyone img,
+      body .page-wrapper .affordable-homes img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        object-fit: cover; }
+      body .page-wrapper .place-for-everyone .place-for-everyone-panel,
+      body .page-wrapper .place-for-everyone .affordable-homes-panel,
+      body .page-wrapper .affordable-homes .place-for-everyone-panel,
+      body .page-wrapper .affordable-homes .affordable-homes-panel {
+        width: 650px;
+        height: auto;
+        padding: 60px; }
+    body .page-wrapper .building-communities {
+      height: 950px; }
+      body .page-wrapper .building-communities img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        object-fit: cover; }
+      body .page-wrapper .building-communities .building-communities-panel {
+        width: 650px;
+        height: auto;
+        padding: 60px; }
+    body .page-wrapper .content-slider {
+      height: 1000px;
+      max-height: none; }
+      body .page-wrapper .content-slider .fixed-width-content.slider {
+        padding: 60px 0; }
+        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner {
+          flex-direction: column-reverse; }
+          body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-content {
+            width: 100%; }
+          body .page-wrapper .content-slider .fixed-width-content.slider .flexslider ul.slides li.slide .slide-inner .slide-image {
+            width: 100%; }
+    body .page-wrapper .quotes {
+      height: 800px; }
+      body .page-wrapper .quotes img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        object-fit: cover; }
+      body .page-wrapper .quotes .quotes-inner {
+        width: 100%;
+        padding: 0 80px; }
+    body .page-wrapper footer .footer-footer {
+      height: 140px;
+      margin-top: 40px;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "navigation navigation" "copyright logos"; } }
 
 /*@include desktop-and-up {
 
@@ -3646,122 +3642,124 @@ body .page-wrapper footer {
 *
 *
 *******************************************************************************************/
-  body:before {
+  body {
+    /*&:before {
     content: '1280 to 992';
     position: fixed;
-    top: 0;
+    top:0;
     background-color: rgba(255, 255, 255, 0.75);
-    z-index: 1000; }
-  body .page-wrapper h1 {
-    width: 10.546vw;
-    height: 19.375vw;
-    background-size: 10.546vw 19.375vw; }
-  body .page-wrapper header .hero {
-    height: 53.906vw; }
-    body .page-wrapper header .hero .hero-panel {
-      width: 54.687vw;
-      height: 13.671vw; }
-      body .page-wrapper header .hero .hero-panel h2 {
-        font-size: 2.656vw;
-        line-height: 3.515vw; }
-  body .page-wrapper .place-for-everyone .place-for-everyone-panel,
-  body .page-wrapper .place-for-everyone .affordable-homes-panel,
-  body .page-wrapper .affordable-homes .place-for-everyone-panel,
-  body .page-wrapper .affordable-homes .affordable-homes-panel {
-    width: 70.312vw;
-    height: 46.875vw;
-    padding: 4.687vw 12.734vw; }
-    body .page-wrapper .place-for-everyone .place-for-everyone-panel h2.panel-brand-heading,
-    body .page-wrapper .place-for-everyone .affordable-homes-panel h2.panel-brand-heading,
-    body .page-wrapper .affordable-homes .place-for-everyone-panel h2.panel-brand-heading,
-    body .page-wrapper .affordable-homes .affordable-homes-panel h2.panel-brand-heading {
-      font-size: 2.343vw;
-      padding: 9.218vw 0 3.125vw; }
-      body .page-wrapper .place-for-everyone .place-for-everyone-panel h2.panel-brand-heading:after,
-      body .page-wrapper .place-for-everyone .affordable-homes-panel h2.panel-brand-heading:after,
-      body .page-wrapper .affordable-homes .place-for-everyone-panel h2.panel-brand-heading:after,
-      body .page-wrapper .affordable-homes .affordable-homes-panel h2.panel-brand-heading:after {
-        width: 5.156vw;
-        height: 14.687vw;
-        background-size: 5.156vw 14.687vw; }
-    body .page-wrapper .place-for-everyone .place-for-everyone-panel p,
-    body .page-wrapper .place-for-everyone .affordable-homes-panel p,
-    body .page-wrapper .affordable-homes .place-for-everyone-panel p,
-    body .page-wrapper .affordable-homes .affordable-homes-panel p {
-      font-size: 1.562vw;
-      padding: 0;
-      line-height: 2.187vw;
-      margin: 1.562vw 0 1.953vw; }
-  body .page-wrapper .building-communities .building-communities-panel {
-    width: 70.312vw;
-    height: 63.281vw;
-    padding: 4.687vw 12.734vw; }
-    body .page-wrapper .building-communities .building-communities-panel h2.panel-brand-heading {
-      font-size: 2.343vw;
-      padding: 9.218vw 0 3.125vw; }
-      body .page-wrapper .building-communities .building-communities-panel h2.panel-brand-heading:after {
-        width: 5.156vw;
-        height: 14.687vw;
-        background-size: 5.156vw 14.687vw; }
-    body .page-wrapper .building-communities .building-communities-panel p {
-      font-size: 1.562vw;
-      padding: 0;
-      line-height: 2.187vw;
-      margin: 1.562vw 0 1.953vw; }
-  body .page-wrapper .content-slider {
-    max-height: 63.281vw; }
-    body .page-wrapper .content-slider .fixed-width-content.slider {
-      padding: 8.593vw 0; }
-      body .page-wrapper .content-slider .fixed-width-content.slider .flexslider {
-        margin: 0 0 4.296vw; }
-        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-prev {
-          left: 1.390vw; }
-        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-next {
-          right: 1.390vw; }
-        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-direction-nav a {
-          width: 5.703vw;
-          height: 5.156vw;
-          margin: -1.562vw; }
-          body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-direction-nav a.flex-next, body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-direction-nav a.flex-prev {
-            background-size: 3.437vw 3.437vw;
-            background-position: 0.859vw 1.484vw; }
-      body .page-wrapper .content-slider .fixed-width-content.slider ul.slides {
-        padding: 0 6.484vw; }
-        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content {
-          padding-top: 8.125vw; }
-          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner {
-            padding: 0 2.031vw; }
-            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner p {
-              font-size: 1.562vw;
-              margin: 0.390vw 0 1.953vw;
-              line-height: 2.187vw; }
-          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper {
-            margin-top: 3.906vw; }
-            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper a.btn.btn-primary {
-              height: 3.906vw;
-              border-radius: 0.39vw;
-              -webkit-border-radius: 0.39vw;
-              -moz-border-radius: 0.39vw;
-              font-size: 1.406vw;
-              line-height: 3.75vw;
-              padding: 0 2.187vw; }
-        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-image {
-          max-width: 54.687vw; }
-  body .page-wrapper .quotes .quotes-inner {
-    width: 100vw;
-    padding: 0 10.156vw; }
-    body .page-wrapper .quotes .quotes-inner .inner p {
-      font-size: 2.578vw;
-      line-height: 3.906vw;
-      letter-spacing: 0.136vw; }
-    body .page-wrapper .quotes .quotes-inner p.credit {
-      font-size: 1.562vw;
-      margin-top: 0.781vw;
-      letter-spacing: 0.136vw; }
-  body .page-wrapper footer .footer-footer .footer-nav ul {
-    margin-top: 3.125vw; }
-  body .page-wrapper footer .footer-footer .copyright p {
-    margin-top: 3.125vw; } }
+    z-index: 1000;
+  }*/ }
+    body .page-wrapper h1 {
+      width: 10.546vw;
+      height: 19.375vw;
+      background-size: 10.546vw 19.375vw; }
+    body .page-wrapper header .hero {
+      height: 53.906vw; }
+      body .page-wrapper header .hero .hero-panel {
+        width: 54.687vw;
+        height: 13.671vw; }
+        body .page-wrapper header .hero .hero-panel h2 {
+          font-size: 2.656vw;
+          line-height: 3.515vw; }
+    body .page-wrapper .place-for-everyone .place-for-everyone-panel,
+    body .page-wrapper .place-for-everyone .affordable-homes-panel,
+    body .page-wrapper .affordable-homes .place-for-everyone-panel,
+    body .page-wrapper .affordable-homes .affordable-homes-panel {
+      width: 70.312vw;
+      height: 46.875vw;
+      padding: 4.687vw 12.734vw; }
+      body .page-wrapper .place-for-everyone .place-for-everyone-panel h2.panel-brand-heading,
+      body .page-wrapper .place-for-everyone .affordable-homes-panel h2.panel-brand-heading,
+      body .page-wrapper .affordable-homes .place-for-everyone-panel h2.panel-brand-heading,
+      body .page-wrapper .affordable-homes .affordable-homes-panel h2.panel-brand-heading {
+        font-size: 2.343vw;
+        padding: 9.218vw 0 3.125vw; }
+        body .page-wrapper .place-for-everyone .place-for-everyone-panel h2.panel-brand-heading:after,
+        body .page-wrapper .place-for-everyone .affordable-homes-panel h2.panel-brand-heading:after,
+        body .page-wrapper .affordable-homes .place-for-everyone-panel h2.panel-brand-heading:after,
+        body .page-wrapper .affordable-homes .affordable-homes-panel h2.panel-brand-heading:after {
+          width: 5.156vw;
+          height: 14.687vw;
+          background-size: 5.156vw 14.687vw; }
+      body .page-wrapper .place-for-everyone .place-for-everyone-panel p,
+      body .page-wrapper .place-for-everyone .affordable-homes-panel p,
+      body .page-wrapper .affordable-homes .place-for-everyone-panel p,
+      body .page-wrapper .affordable-homes .affordable-homes-panel p {
+        font-size: 1.562vw;
+        padding: 0;
+        line-height: 2.187vw;
+        margin: 1.562vw 0 1.953vw; }
+    body .page-wrapper .building-communities .building-communities-panel {
+      width: 70.312vw;
+      height: 63.281vw;
+      padding: 4.687vw 12.734vw; }
+      body .page-wrapper .building-communities .building-communities-panel h2.panel-brand-heading {
+        font-size: 2.343vw;
+        padding: 9.218vw 0 3.125vw; }
+        body .page-wrapper .building-communities .building-communities-panel h2.panel-brand-heading:after {
+          width: 5.156vw;
+          height: 14.687vw;
+          background-size: 5.156vw 14.687vw; }
+      body .page-wrapper .building-communities .building-communities-panel p {
+        font-size: 1.562vw;
+        padding: 0;
+        line-height: 2.187vw;
+        margin: 1.562vw 0 1.953vw; }
+    body .page-wrapper .content-slider {
+      max-height: 63.281vw; }
+      body .page-wrapper .content-slider .fixed-width-content.slider {
+        padding: 8.593vw 0; }
+        body .page-wrapper .content-slider .fixed-width-content.slider .flexslider {
+          margin: 0 0 4.296vw; }
+          body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-prev {
+            left: 1.390vw; }
+          body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-next {
+            right: 1.390vw; }
+          body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-direction-nav a {
+            width: 5.703vw;
+            height: 5.156vw;
+            margin: -1.562vw; }
+            body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-direction-nav a.flex-next, body .page-wrapper .content-slider .fixed-width-content.slider .flexslider .flex-direction-nav a.flex-prev {
+              background-size: 3.437vw 3.437vw;
+              background-position: 0.859vw 1.484vw; }
+        body .page-wrapper .content-slider .fixed-width-content.slider ul.slides {
+          padding: 0 6.484vw; }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content {
+            padding-top: 8.125vw; }
+            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner {
+              padding: 0 2.031vw; }
+              body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .inner p {
+                font-size: 1.562vw;
+                margin: 0.390vw 0 1.953vw;
+                line-height: 2.187vw; }
+            body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper {
+              margin-top: 3.906vw; }
+              body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-content .btn-wrapper a.btn.btn-primary {
+                height: 3.906vw;
+                border-radius: 0.39vw;
+                -webkit-border-radius: 0.39vw;
+                -moz-border-radius: 0.39vw;
+                font-size: 1.406vw;
+                line-height: 3.75vw;
+                padding: 0 2.187vw; }
+          body .page-wrapper .content-slider .fixed-width-content.slider ul.slides .slide .slide-inner .slide-image {
+            max-width: 54.687vw; }
+    body .page-wrapper .quotes .quotes-inner {
+      width: 100vw;
+      padding: 0 10.156vw; }
+      body .page-wrapper .quotes .quotes-inner .inner p {
+        font-size: 2.578vw;
+        line-height: 3.906vw;
+        letter-spacing: 0.136vw; }
+      body .page-wrapper .quotes .quotes-inner p.credit {
+        font-size: 1.562vw;
+        margin-top: 0.781vw;
+        letter-spacing: 0.136vw; }
+    body .page-wrapper footer .footer-footer .footer-nav ul {
+      margin-top: 3.125vw; }
+    body .page-wrapper footer .footer-footer .copyright p {
+      margin-top: 3.125vw; } }
 
 @media only screen and (max-width: 767px) {
   /******************************************************************************************
@@ -3774,13 +3772,14 @@ body .page-wrapper footer {
 *
 *******************************************************************************************/
   body {
-    width: 100%; }
-    body:before {
-      content: 'below 767';
-      position: fixed;
-      top: 0;
-      background-color: rgba(255, 255, 255, 0.75);
-      z-index: 1000; }
+    width: 100%;
+    /*&:before {
+    content: 'below 767';
+    position: fixed;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1000;
+  }*/ }
     body .page-wrapper {
       position: relative; }
       body .page-wrapper h1 {
